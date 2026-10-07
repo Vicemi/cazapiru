@@ -47,7 +47,7 @@ Hay dos finales: el verdadero si cerraste los cinco Ecos y uno parcial si faltan
   * *Normal* usa los problemas de 5.º de primaria. Los duelos dan más tiempo y la pista aparece sola; en los problemas, la primera pista es gratis.
   * *Difícil* usa los problemas de 6.º de primaria.
 * **Tipografías de los dos juegos:** la Futura de Cazaproblemas en la interfaz y la fuente bitmap de Piracálculos en el HUD pirata, los duelos y los títulos.
-* **Atuendos compartidos:** los cuatro atuendos de Cazaproblemas (Uniforme, Abrigo, Brad y Sombra) se consiguen igual que en el original y sirven para los dos héroes: Aki usa los trajes originales y Pi una versión recoloreada de sus propios dibujos. En el menú y en el mapa cada héroe aparece con el atuendo que ya tenés.
+* **Atuendos:** los cuatro atuendos de Cazaproblemas (Uniforme, Abrigo, Brad y Sombra) se consiguen igual que en el original y los usa el héroe que elegiste: Aki con los trajes originales, Pi con una versión recoloreada de sus propios dibujos. El otro héroe mantiene siempre su aspecto original.
 * **Presentación:** logo propio, menú con los dos mundos lado a lado, prólogo en historieta y portal de Vis animado.
 
 ## Controles

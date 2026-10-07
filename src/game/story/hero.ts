@@ -2,7 +2,7 @@
 // Aki uses the original walking frames; Pi (the pirate of Piracálculos) is drawn from his own sprites at half size, with Flo following.
 import { img } from '../core/assets';
 import { save } from '../save';
-import { currentOutfit, skinned } from './skins';
+import { skinned } from './skins';
 import { Ent, type World } from '../caza/world';
 
 /** Dialog text for the active hero: [Aki] -> [Pi], Aki -> Pi. */
@@ -71,7 +71,7 @@ export function makePartner(w: World, x: number, y: number): Ent {
     : { id: 'partner_pi', images: [], outfits: [], sounds: {} };
   const e = new Ent(def);
   e.solid = false; e.placed = true; e.x = x; e.y = y; e.dir = 'w';
-  e.outfit = currentOutfit();   // both heroes share the owned outfit
+  e.outfit = 'default';   // the hero you did not pick always keeps the original look
   if (partner === 'pi') {
     let face = -1;
     e.custom = (g, en, sx, sy) => {

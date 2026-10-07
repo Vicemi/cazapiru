@@ -193,7 +193,7 @@ export class ConsoleScene implements Scene {
         s.outfit = o.id; this.cz.world.player.outfit = o.id; commit(); playSound('caza/sounds/console/btn_press.ogg', 0.5);
       }
     });
-    text(g, 'Los atuendos se consiguen en la historia y sirven para los dos héroes.', 60, 470, { size: 22, color: '#9ab' });
+    text(g, 'Los atuendos se consiguen en la historia y los usa el héroe que elegiste.', 60, 470, { size: 22, color: '#9ab' });
     text(g, 'Objetos', 60, 520, { size: 34, color: '#ffe066', weight: 700 });
     const keyItems: [string, string, string?][] = [['item_blueprint', 'Plano de la catapulta', 'caza/screens/inventory/items/img_blueprint.png'], ['item_miniature', 'Miniatura del Fracaso de Gladius', 'caza/screens/inventory/items/img_catapult.png'], ['finished_all_puzzles', 'Insignia de Cazaproblemas']];
     let y = 570;

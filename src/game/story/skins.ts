@@ -25,8 +25,13 @@ export function currentOutfit(): string {
   return OUTFITS.some((k) => k.id === o) && outfitOwned(o) ? o : 'default';
 }
 
+/** Outfits only dress the hero you play; the other one always keeps the original look. */
+export function outfitFor(hero: 'aki' | 'pi'): string {
+  return save().hero === hero ? currentOutfit() : 'default';
+}
+
 export function piSkin(): Skin {
-  const id = currentOutfit();
+  const id = outfitFor('pi');
   return OUTFITS.find((k) => k.id === id) ?? OUTFITS[0];
 }
 
@@ -111,7 +116,7 @@ export function drawHeroHead(g: CanvasRenderingContext2D, cx: number, cy: number
     // head and hat of the 256x256 frame
     if (im) g.drawImage(im, 30, 10, 196, 150, cx - r * 1.25, cy - r * 1.05, r * 2.5, r * 1.92);
   } else {
-    const outfit = currentOutfit();
+    const outfit = outfitFor('aki');
     const im = img(`caza/objects/pc/images/pc_${outfit}_default_s001.png`) ?? img('caza/objects/pc/images/pc_default_default_s001.png');
     if (im) g.drawImage(im, 0, 0, 70, 60, cx - r * 1.1, cy - r * 1.05, r * 2.2, r * 1.9);
   }

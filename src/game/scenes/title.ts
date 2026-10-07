@@ -7,7 +7,7 @@ import { isPressed, pointer } from '../core/input';
 import { text, paragraph } from '../ui/text';
 import { ribbon } from '../ui/fx';
 import { pixText } from '../ui/pixfont';
-import { currentOutfit } from '../story/skins';
+import { outfitFor } from '../story/skins';
 import { commit, hasSave, newGame, resume, save } from '../save';
 import { startHero } from './flow';
 
@@ -251,8 +251,8 @@ export class TitleScene implements Scene {
     g.fillStyle = 'rgba(0,0,0,0.35)';
     g.beginPath(); g.ellipse(160, 842, 90, 16, 0, 0, Math.PI * 2); g.fill();
     g.beginPath(); g.ellipse(1020, 842, 100, 16, 0, 0, Math.PI * 2); g.fill();
-    // each hero appears with the outfit you already own (otherwise the original one); Pi's skin comes from the keyed hook
-    const aki = img(`caza/objects/pc/images/pc_${currentOutfit()}_default_e001.png`) ?? img('caza/objects/pc/images/pc_default_default_e001.png');
+    // only the hero you play wears the owned outfit; the other keeps the original look (Pi's skin comes from the keyed hook)
+    const aki = img(`caza/objects/pc/images/pc_${outfitFor('aki')}_default_e001.png`) ?? img('caza/objects/pc/images/pc_default_default_e001.png');
     if (aki) { const b = Math.sin(t * 2) * 3; g.drawImage(aki, 160 - 105, 842 - 300 + b, 210, 300 - b); }
     // every Pi / Flo frame faces left: they look toward the menu without mirroring
     const pi = img('pira/images/characters/Pi/Pi_00.png', true);
@@ -398,7 +398,7 @@ export class TitleScene implements Scene {
       // character
       g.fillStyle = 'rgba(0,0,0,0.3)'; g.beginPath(); g.ellipse(r.x + r.w / 2, r.y + 440, 110, 20, 0, 0, Math.PI * 2); g.fill();
       if (c.hero === 'aki') {
-        const im = img(`caza/objects/pc/images/pc_${currentOutfit()}_default_s001.png`) ?? img('caza/objects/pc/images/pc_default_default_s001.png');
+        const im = img(`caza/objects/pc/images/pc_${outfitFor('aki')}_default_s001.png`) ?? img('caza/objects/pc/images/pc_default_default_s001.png');
         if (im) g.drawImage(im, r.x + r.w / 2 - 112, r.y + 440 - 320, 224, 320);
       } else {
         const im = img('pira/images/characters/Pi/PiConLoro00.png', true);

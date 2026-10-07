@@ -113,7 +113,7 @@ export class CazaScene implements Scene {
   private async setupPartner(): Promise<void> {
     const s = save(), w = this.world, p = w.player;
     if (!s.hero || this.mapId.startsWith('dungeon')) return;
-    if (partnerOf() === 'aki') await preload(w.walkFrames({ id: 'pc', images: [], outfits: ['default', 'brad', 'shadow', 'cold'], sounds: {} }, currentOutfit()));
+    if (partnerOf() === 'aki') await preload(w.walkFrames({ id: 'pc', images: [], outfits: ['default', 'brad', 'shadow', 'cold'], sounds: {} }, 'default'));
     this.encounter = pendingEncounter(s, this.mapId);
     if (this.encounter) {
       // somewhere along the paths, 9-14 steps away from the player, so the partner walks in on foot
