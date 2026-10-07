@@ -318,6 +318,8 @@ export class TitleScene implements Scene {
   private modal(g: CanvasRenderingContext2D, title: string, note: string, buttons: { sprite?: (on: boolean) => string; icon?: string; color?: string; label: string; sub?: string }[]): void {
     g.fillStyle = 'rgba(20,8,4,0.55)'; g.fillRect(0, 0, W, H);
     const w = 660, h = 350, x = W / 2 - w / 2, y = 400;
+    // tapping outside the window closes it (touch screens have no Esc)
+    if (pointer.clicked && !(pointer.x >= x && pointer.x < x + w && pointer.y >= y - 40 && pointer.y < y + h)) { this.mode = 'main'; return; }
     parchment(g, x, y, w, h);
     ribbon(g, W / 2, y - 26, 440, title, 24);
     text(g, note, W / 2, y + 74, { size: 22, align: 'center', color: '#5a3416' });
@@ -420,6 +422,12 @@ export class TitleScene implements Scene {
     });
     text(g, 'El héroe que no elijas seguirá su propio camino y aparecerá a lo largo de la historia.', W / 2, 820, { size: 22, align: 'center', color: '#fff3c0' });
     text(g, '← →  elegir     Espacio / clic  confirmar     Esc  volver', W / 2, 862, { size: 20, align: 'center', color: 'rgba(255,243,192,0.75)' });
+    // back button (touch screens have no Esc)
+    const back = { x: 24, y: 24, w: 150, h: 52 };
+    const ob = pointer.inside && pointer.x >= back.x && pointer.x < back.x + back.w && pointer.y >= back.y && pointer.y < back.y + back.h;
+    g.save(); g.fillStyle = ob ? 'rgba(255,194,14,0.9)' : 'rgba(42,26,16,0.8)'; g.beginPath(); g.roundRect(back.x, back.y, back.w, back.h, 26); g.fill(); g.restore();
+    text(g, '◀ Volver', back.x + back.w / 2, back.y + 35, { size: 24, align: 'center', weight: 700, color: ob ? '#3a2412' : '#fff3c0' });
+    if (ob && pointer.clicked) { click(); this.mode = 'main'; }
   }
 
   /** Credits: the mod author first (Vicemi Dev), then the Cazaproblemas pages, then the Piracálculos card and the legal note. */

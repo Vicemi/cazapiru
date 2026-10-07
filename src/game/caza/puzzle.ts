@@ -173,9 +173,10 @@ export class PuzzleScene implements Scene {
     drawText(g, `Problema ${this.ex.id}`, 56, 62, { size: 30, color: '#9fe8ff', baseline: 'middle' });
     drawText(g, `${this.pointsNow()} pts`, 1144, 62, { size: 30, color: '#ffe066', align: 'right', baseline: 'middle' });
     this.layout(g, this.ex.body, { x: 40, y: 90, w: 1120, h: 520 }, 'col');
+    // the sudoku registers its cells as hit areas, so it must be drawn BEFORE the click handling in controls()
+    if (this.sudoku) this.drawSudoku(g);
     this.controls(g);
     this.keypad(g);
-    if (this.sudoku) this.drawSudoku(g);
     if (this.showClues) this.drawClues(g);
     if (this.phase === 'exit') this.drawExit(g);
   }
@@ -191,7 +192,7 @@ export class PuzzleScene implements Scene {
       if (o) { g.fillStyle = 'rgba(255,255,255,0.14)'; g.fillRect(r.x, r.y, r.w, r.h); }
       drawText(g, label, r.x + r.w / 2, r.y + r.h / 2, { size: label === 'OK' ? 46 : 26, align: 'center', baseline: 'middle', color: col, weight: 700, outline: '#000', outlineW: 6 });
     }
-    if (pointer.clicked) {
+    if (pointer.clicked && !this.showClues && this.phase === 'play') {   // overlays (clues, exit) keep their own clicks
       if (over(ok)) this.submit();
       else if (over(cl)) { if (!this.showClues) { this.showClues = true; } }
       else if (over(ex)) this.phase = 'exit';

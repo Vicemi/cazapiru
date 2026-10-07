@@ -53,3 +53,11 @@ Reimplementar ambos juegos en TS sobre una base común: mundo de Cazaproblemas (
 * Publicación: `public/assets/caza` y `public/assets/pira` quedan fuera del repo (se regeneran con `tools/`). Rama `public-main` = historial limpio.
 * Atuendos unificados: `OUTFITS` (default/cold/brad/shadow) en `story/skins.ts`; se obtienen con los mismos `add_item` del original y valen para ambos héroes (`currentOutfit()` = elegido y comprado, si no 'default'). Pi: recoloreo (Abrigo verde azulado, Brad rubio y fucsia, Sombra silueta negra). Menú, mapa, compañero y jugador usan `currentOutfit()`.
 * Corrección: el atuendo solo lo lleva el héroe elegido (`outfitFor(hero)`); el otro conserva el aspecto original en menú, historia y como compañero.
+
+## Rev. 5: puertas, escaleras, sudoku, celular
+* Puertas: las zonas `enter` usan el colisionador exacto de los pies (sin margen). Con margen, al llegar a `DOOR_00x` se disparaba la puerta de nuevo (rebote a la torre / "Puerta cerrada"). Las zonas `action` conservan margen. Verificado: todas las llegadas de puertas/caminos no pisan zonas de cambio de mapa.
+* Puntos de aparición inexistentes (p. ej. `START_POINT`): se usa un SPAWN/DOOR del mapa; posición guardada dentro de una pared -> celda transitable más cercana.
+* Escaleras/esquinas: `World.slideMove` busca hasta 12 px a los lados una abertura y desliza al jugador.
+* Sudoku (problema 0, el primero del juego): sus casillas se registraban DESPUÉS de procesar el clic -> tocar no hacía nada. Ahora se dibuja antes de `controls()`. Paneles (pistas/salir) ya no dejan pasar clics al problema.
+* Prueba automática: los 116 problemas aceptan su respuesta y tienen zonas tocables en pantalla.
+* Celular: `touchHint()` cambia Espacio/Esc/Clic por A/☰/Tocá; botón Saltar en la historieta; Volver en el selector; tocar fuera de una ventana la cierra; sin ayuda de teclado en el HUD táctil; el compañero no espera encima del jugador.

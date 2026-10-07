@@ -39,7 +39,8 @@ export class IntroScene implements Scene {
   update(dt: number, app: App): void {
     this.t += dt;
     this.turnT = Math.min(1, this.turnT + dt * 2.5);
-    if (isPressed('back')) { app.goto(new MeetingScene(this.hero)); return; }
+    const skip = pointer.pressed && pointer.x > W - 200 && pointer.y < 70;
+    if (isPressed('back') || skip) { app.goto(new MeetingScene(this.hero)); return; }
     const panels = COMIC_PAGES[this.page].panels;
     if (this.t - (this.appear[this.shown - 1] ?? 0) > 0.35 && (isPressed('act') || pointer.pressed)) {
       playSound('caza/sounds/general/btn_press.ogg', 0.4);
@@ -78,7 +79,10 @@ export class IntroScene implements Scene {
     const last = this.shown >= page.panels.length;
     const pulse = 0.6 + 0.4 * Math.sin(this.t * 4);
     text(g, last ? (this.page < COMIC_PAGES.length - 1 ? 'Siguiente página ▶' : 'Continuar ▶') : 'Clic / Espacio ▶', W - 44, H - 18, { size: 24, align: 'right', weight: 700, color: `rgba(122,42,18,${pulse})` });
-    text(g, `${this.page + 1} / ${COMIC_PAGES.length}    ·    Esc: saltear`, 44, H - 18, { size: 22, color: '#7a5a3a' });
+    text(g, `${this.page + 1} / ${COMIC_PAGES.length}`, 44, H - 18, { size: 22, color: '#7a5a3a' });
+    // skip button (top right): works with mouse and touch
+    g.save(); g.fillStyle = 'rgba(42,26,16,0.75)'; g.beginPath(); g.roundRect(W - 186, 14, 170, 46, 23); g.fill(); g.restore();
+    text(g, 'Saltar ▶▶', W - 101, 46, { size: 24, align: 'center', weight: 700, color: '#fff3c0' });
   }
 }
 

@@ -1,5 +1,5 @@
 // Text and widget helpers. The UI font is the Futura family shipped with Cazaproblemas (loaded by index.astro as CPFutura).
-import { pointer } from '../core/input';
+import { pointer, touchHint } from '../core/input';
 import { roundRect, wrap } from '../core/app';
 
 export const FONT = 'CPFutura, "Futura", "Trebuchet MS", system-ui, sans-serif';
@@ -14,6 +14,7 @@ export function setFont(g: CanvasRenderingContext2D, size: number, weight: numbe
 }
 
 export function text(g: CanvasRenderingContext2D, s: string, x: number, y: number, o: TextOpts = {}): void {
+  s = touchHint(s);
   setFont(g, o.size ?? 28, o.weight ?? 400, o.italic);
   g.textAlign = o.align ?? 'left';
   g.textBaseline = o.baseline ?? 'alphabetic';

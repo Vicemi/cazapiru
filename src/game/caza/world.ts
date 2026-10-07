@@ -173,6 +173,29 @@ export class World {
     return moved;
   }
 
+  /**
+   * Player movement with corner assistance: like two tryMove calls, but when the main direction is blocked it looks up to
+   * 12 px to each side for an opening (stairs, doors, narrow paths) and slides toward it, so you don't need pixel-perfect aim.
+   */
+  slideMove(e: Ent, dx: number, dy: number): boolean {
+    const a = dx ? this.tryMove(e, dx, 0) : false;
+    const b = dy ? this.tryMove(e, 0, dy) : false;
+    if (a || b) return true;
+    const c = e.def.collider ?? { ox: 0, oy: -7, w: 52, h: 12 };
+    const free = (x: number, y: number): boolean => !this.blockedRect({ x: x + c.ox - c.w / 2, y: y + c.oy - c.h / 2, w: c.w, h: c.h });
+    const step = Math.max(Math.abs(dx), Math.abs(dy), 0.5);
+    if (Math.abs(dy) >= Math.abs(dx) && dy) {
+      for (let k = 1; k <= 12; k++) for (const s of [1, -1]) {
+        if (free(e.x + s * k, e.y + dy) && free(e.x + s * Math.min(k, step), e.y)) { e.x += s * Math.min(k, step); return true; }
+      }
+    } else if (dx) {
+      for (let k = 1; k <= 12; k++) for (const s of [1, -1]) {
+        if (free(e.x + dx, e.y + s * k) && free(e.x, e.y + s * Math.min(k, step))) { e.y += s * Math.min(k, step); return true; }
+      }
+    }
+    return false;
+  }
+
   // ------------------------------------------------------------------ walkable grid (one cell per tile), used to place and route NPCs
   /** Can a character's feet stand at (x, y)? Slightly smaller than the player's collider so narrow paths still count. */
   standable(x: number, y: number): boolean {

@@ -16,6 +16,15 @@ let curr = new Set<string>();
 let typed: string[] = [];
 
 /** `pressed`: edge seen by the next update tick. `clicked`: latched until the frame has been drawn (immediate-mode buttons read it while rendering). */
+/** Touch screen (phones, tablets): the UI shows on-screen buttons and touch wording instead of keys. */
+export const COARSE = typeof window !== 'undefined' && (matchMedia('(pointer: coarse)').matches || navigator.maxTouchPoints > 0);
+
+/** Rewrites keyboard hints for touch screens: Espacio -> A, Esc -> ☰, Clic -> Tocá. */
+export function touchHint(s: string): string {
+  if (!COARSE || !/Espacio|Esc|[Cc]lic/.test(s)) return s;
+  return s.replace(/Clic \/ Espacio|Espacio \/ clic/g, 'Tocá').replace(/\bEspacio\b/g, 'A').replace(/\bEsc\b/g, '☰').replace(/\bClic\b/g, 'Tocá').replace(/\bclic\b/g, 'tocá');
+}
+
 export const pointer = { x: 0, y: 0, down: false, pressed: false, clicked: false, released: false, inside: false };
 let pDown = false, pPressed = false, pReleased = false;
 

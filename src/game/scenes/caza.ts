@@ -21,6 +21,9 @@ import { spawnEnemies, updateEnemies, defeat, aliveEnemies, type Enemy } from '.
 import { DuelScene } from '../caza/duel';
 import { makeLevel } from '../pira';
 
+/** touch screens show on-screen buttons instead of keyboard hints */
+import { COARSE } from '../core/input';
+
 export class CazaScene implements Scene {
   world = new World();
   host = new LuaHost();
@@ -55,8 +58,12 @@ export class CazaScene implements Scene {
     // Pi (as hero or as partner) and Flo: all frames ready before the first step, so he never blinks out
     await preload([...Array.from({ length: 8 }, (_, i) => `pira/images/characters/Pi/Pi_Caminar_0${i}.png`), 'pira/images/characters/Pi/Pi_00.png',
       ...Array.from({ length: 5 }, (_, i) => `pira/images/characters/Flo/Loro_0${i + 1}.png`)], true);
-    const wp = this.spawn ? w.waypoint(this.spawn) : null;
+    // spawn point; if the script names one the map does not have, use the map's own spawn points instead of a fixed spot
+    const wp = (this.spawn ? w.waypoint(this.spawn) : null)
+      ?? [...w.map.waypoints.entries()].find(([k]) => /SPAWN|START|DOOR/.test(k))?.[1] ?? null;
     p.x = this.at?.x ?? wp?.x ?? 920; p.y = this.at?.y ?? wp?.y ?? 1300; p.placed = true;
+    // a resumed position inside a wall (old saves, moved objects) is pushed to the nearest walkable cell
+    if (!w.standable(p.x, p.y)) { const c = w.nearestCell(p.x, p.y, 10); if (c) { const q = w.cellCenter(c[0], c[1]); p.x = q.x; p.y = q.y; } }
     heroSprite(w, p);
     w.player = p;
     w.ents.set('pc', p);
@@ -141,6 +148,7 @@ export class CazaScene implements Scene {
       const c = w.cellCenter(k % f.w, Math.floor(k / f.w));
       const dx = c.x - eco.ent.x, dy = c.y - eco.ent.y;
       if (Math.abs(dx) < 40 && Math.abs(dy) < 30) continue;          // not on top of the portal
+      if (Math.hypot(c.x - p.x, c.y - p.y) < 90) continue;            // nor on top of the player (spawn points are often next to the Ecos)
       const d = Math.hypot(dx + 70, dy - 6);                           // prefer its left side
       if (d < bd) { bd = d; best = c; }
     }
@@ -360,9 +368,7 @@ export class CazaScene implements Scene {
     p.moving = len > 0.05;
     if (p.moving) {
       const s = w.walkSpeed * dt * (isDown('alt') ? 1.6 : 1);
-      const a = w.tryMove(p, dx * s, 0);
-      const b = w.tryMove(p, 0, dy * s);
-      p.moving = a || b;
+      p.moving = w.slideMove(p, dx * s, dy * s);   // slides around corners and stair edges
       if (Math.abs(dx) > Math.abs(dy)) p.dir = dx > 0 ? 'e' : 'w'; else if (Math.abs(dy) > 0.05) p.dir = dy > 0 ? 's' : 'n';
     }
   }
@@ -384,9 +390,12 @@ export class CazaScene implements Scene {
       if (e === p || !e.active || !e.placed || !e.def.trigger) continue;
       const r = e.triggerRect();
       if (!r) continue;
-      const inside = overlap(feet, r);
+      // 'enter' zones use the exact feet (like the original engine): arriving next to a door must not fire it again;
+      // 'action' prompts (talk / use) keep a small margin so they are easy to reach
+      const inside = overlap(pc, r);
+      const near = overlap(feet, r);
       if (inside && !e.overlapped && e.enter) this.host.fire(e, 'enter');
-      if (inside && e.action) {
+      if (near && e.action) {
         this.prompt = e.def.id.startsWith('npc') || e.def.id.startsWith('tri_door') ? 'Espacio: hablar / usar' : 'Espacio: usar';
         if (act && !fired && !this.dialog.active && this.lock === 0) { fired = true; this.host.fire(e, 'action'); }
       }
@@ -408,7 +417,7 @@ export class CazaScene implements Scene {
     if (cr) g.drawImage(cr, 30, 20, 46, 50);
     text(g, String(s.crystals), 90, 56, { size: 40, color: '#9fe8ff', weight: 700 });
     text(g, `${s.score} pts`, 250, 56, { size: 28, color: '#ffe066', align: 'right' });
-    text(g, '[C] consola   [Esc] pausa', W - 20, 38, { size: 22, color: 'rgba(255,255,255,0.75)', align: 'right', outline: '#000' });
+    if (!COARSE) text(g, '[C] consola   [Esc] pausa', W - 20, 38, { size: 22, color: 'rgba(255,255,255,0.75)', align: 'right', outline: '#000' });
     if (this.prompt && !this.dialog.active) {
       panel(g, W / 2 - 200, H - 90, 400, 58, 'rgba(10,12,24,0.8)', '#c9a24a');
       text(g, this.prompt, W / 2, H - 52, { size: 28, align: 'center', color: '#f4eecc' });
