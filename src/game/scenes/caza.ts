@@ -59,8 +59,10 @@ export class CazaScene implements Scene {
     await preload([...Array.from({ length: 8 }, (_, i) => `pira/images/characters/Pi/Pi_Caminar_0${i}.png`), 'pira/images/characters/Pi/Pi_00.png',
       ...Array.from({ length: 5 }, (_, i) => `pira/images/characters/Flo/Loro_0${i + 1}.png`)], true);
     // spawn point; if the script names one the map does not have, use the map's own spawn points instead of a fixed spot
+    // never fall back to a road exit (SPAWN_POINT_<MAP>) or a door: those are the village gates, often closed
+    const safe = ['SPAWN_POINT', 'FOUNTAIN_SPAWN_POINT', 'START_POINT'];
     const wp = (this.spawn ? w.waypoint(this.spawn) : null)
-      ?? [...w.map.waypoints.entries()].find(([k]) => /SPAWN|START|DOOR/.test(k))?.[1] ?? null;
+      ?? (this.spawn || !this.at ? safe.map((k) => w.waypoint(k)).find((q) => !!q) ?? null : null);
     p.x = this.at?.x ?? wp?.x ?? 920; p.y = this.at?.y ?? wp?.y ?? 1300; p.placed = true;
     // a resumed position inside a wall (old saves, moved objects) is pushed to the nearest walkable cell
     if (!w.standable(p.x, p.y)) { const c = w.nearestCell(p.x, p.y, 10); if (c) { const q = w.cellCenter(c[0], c[1]); p.x = q.x; p.y = q.y; } }

@@ -63,3 +63,4 @@ Reimplementar ambos juegos en TS sobre una base común: mundo de Cazaproblemas (
 * Celular: `touchHint()` cambia Espacio/Esc/Clic por A/☰/Tocá; botón Saltar en la historieta; Volver en el selector; tocar fuera de una ventana la cierra; sin ayuda de teclado en el HUD táctil; el compañero no espera encima del jugador.
 * Publicación: por pedido del autor (igual que Xa y SVNZ) el repo incluye los recursos convertidos (`public/assets/caza`, `public/assets/pira`) para jugar sin los juegos originales. `research/` sigue fuera.
 * Publicación completa: también `research/` (descompilaciones, proyectos de Ghidra, banco descifrado, capturas). `.node-version` = 22 para Cloudflare Pages (build `npm run build`, salida `dist`).
+* Inicio: la partida nueva empieza en `FOUNTAIN_SPAWN_POINT` (donde termina el prólogo; Luceria está debajo). El respaldo de aparición ya no elige salidas `SPAWN_POINT_<MAPA>` ni puertas (eran el portón de la aldea, cerrado al inicio).

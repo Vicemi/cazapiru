@@ -108,7 +108,8 @@ export class MeetingScene implements Scene {
       s.flags.met = 1;
       commit();
       const { CazaScene } = await import('./caza');
-      app.goto(new CazaScene('academy'));
+      // the adventure starts where the prologue ends: at the Academy fountain (Luceria waits just below)
+      app.goto(new CazaScene('academy', 'FOUNTAIN_SPAWN_POINT'));
     })();
   }
 
