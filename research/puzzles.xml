@@ -1,0 +1,2818 @@
+<exercises>
+	<exercise id="0" points="0">
+		<clues>
+			<a>Intenta completar una línea a la vez</a>
+			<b>Comienza completando las filas que tienen números al inicio</b>
+			<c></c>
+		</clues>
+		<body>
+			<row height="20">
+				<label font_size="14">Una cerradura de combinación especial te impide continuar. Busca la combinación que abre la cerradura ubicando los números 1, 2 & 3 en las casillas de manera que en cada fila y en cada columna no se repitan.</label>
+			</row>
+			<row height="80">
+				<randomsudoku name="sud1" image="data/puzzles/images/randomsudoku.png" frame="3"/>
+			</row>			
+		</body>
+		<answers>
+			<answer>
+				<value name="sud1"/>
+			</answer>
+		</answers>
+	</exercise>
+  <exercise id="1" points="58">
+    <clues>
+      <a>Busca los 7 triángulos formados por una única zona </a>
+      <b>Busca los 8 triángulos formados por dos zonas</b>
+      <c>Busca los 4 triángulos formados por tres zonas y el único triángulo formado por 4 zonas</c>
+    </clues>
+    <body>
+      <row height="70">
+	    <column width="5"/>	
+        <column width="50">
+          <label>¿Cuántos triángulos aparecen en este diagrama de un cristal?</label>
+        </column>
+        <column width="45">
+          <image image="data/puzzles/images/puzzle_1.png"/>
+        </column>
+      </row>
+      <row height="30">
+        <multiplechoice image="data/puzzles/images/puzzle_1_mc.png" number="5" name="mc1"/>
+      </row>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="3" points="11900">
+    <clues>
+      <a>Observa que en el rectángulo hay 12 cuadraditos iguales a cada una de las caras del cubo; calcula el área de cada cuadradito</a>
+      <b>El área de un cuadrado se calcula elevando la medida del lado al cuadrado</b>
+      <c>El volumen de un cubo se calcula elevando la medida de la arista al cubo  </c>
+    </clues>
+    <body>
+      <row height="70">
+	    <column width="5"/>
+        <column width="50">
+          <label font_size="16">Tengo este trozo de cartón rectangular y sé que su área es de 48 cm2. Pienso recortarle la parte no sombreada para construir un cubo. ¿Me podés ayudar a calcular el volumen del cubo en cm3?</label>
+        </column>
+        <column width="45">
+          <image image="data/puzzles/images/puzzle_3.png"/>
+        </column>
+      </row>
+      <row height="30">
+        <multiplechoice image="data/puzzles/images/puzzle_3_mc.png" number="5" name="mc1"/>
+      </row>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="4" points="4600">
+    <clues>
+      <a>Calcula el volumen de cada uno de los dos recipientes recordando que la fórmula es V = áB x h, siendo áB el área de la base y h la altura </a>
+      <b>Calcula el volumen del cubo recordando que la fórmula es V = a3, siendo a la arista</b>
+      <c>Compara los volúmenes</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="25">
+          <label font_size="14">Tengo éstos dos recipientes llenos de agua y necesito llenar un cubo de 6cm de arista pero puedo utilizar solamente el agua de uno de éstos recipientes. ¿Cuál recipiente tengo que usar?</label>
+        </row>
+        <row height="50">
+          <image image="data/puzzles/images/puzzle_4.png"/>
+        </row>
+        <row height="25">
+          <multiplechoice image="data/puzzles/images/puzzle_4_mc.png" number="4" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+	<exercise id="7" points="19247">
+		<clues>
+			<a>Para formar un triángulo de lado 2 necesitas 4 triángulos de lado 1</a>
+			<b>Para formar un triángulo de lado 3 necesitas 9 triángulos de lado 1 </b>
+			<c>Para formar un triángulo de lado 4 necesitas 16 triángulos de lado 1</c>
+		</clues>
+		<body>
+			<column width="100">
+				<row height="70">
+					<label font_size="16">Juntando triángulos equiláteros de lado 1, se forman triángulos equiláteros de diferentes tamaños. ¿Cuál es el lado de un triángulo equilátero formado por 81 triángulos de lado 1?</label>
+				</row>
+				<row height="30">
+					<label font_size="20" vcentered="false">El lado es           .</label>
+					<text y="197" skip="0" width="10" name="t1" x="405"></text>
+				</row>
+			</column>
+		</body>
+		<answers>
+			<answer>
+				<value name="t1">9</value>
+			</answer>
+		</answers>
+	</exercise>  
+  <exercise id="9" points="55"> 
+    <clues>
+      <a>Encastra la parcela con forma cuadrada en el ángulo recto de la otra parcela</a>
+      <b>Completa el cuadrado que representa el campo inicial</b>
+      <c>Identifica entre las 4 opciones cual es la que completa el cuadrado</c>
+    </clues>
+    <body>
+	  <column width="100">
+	    <row height="65">
+	      <column width="5"/>
+          <column width="65">
+            <label font_size="16">Mi padre nos dejó un terreno de forma cuadrada en las montañas y lo dividimos en 3. Mis dos hermanos se quedaron con las partes dibujadas a la derecha. ¿Qué forma tiene mi parte?</label>
+          </column>
+          <column width="30">
+            <image image="data/puzzles/images/puzzle_9.png"/>
+          </column>
+        </row>
+        <row height="35">
+          <multiplechoice image="data/puzzles/images/puzzle_9_mc.png" number="4" name="mc1"/>
+        </row>
+      </column>      
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="10" points="10100">
+    <clues>
+      <a>Observa que la suma de las baldosas de las piezas que elijas debe ser igual a la cantidad de baldosas que necesitas para cubrir la región sin baldosas de tu patio</a>
+      <b>Necesitas 17 baldosas para cubrir la región sin baldosas de tu patio</b>
+      <c>Observa que si encastras la pieza 4, no puedes colocar ninguna de las otras</c>
+    </clues>
+	    <body>
+      <column width="100">
+        <row height="20">
+            <label font_size="16">Para cubrir exactamente la región sin baldosas de mi patio, debo encastrar dos de las cuatro piezas que ves aquí. ¿Cuáles son las dos piezas que debo elegir? </label>
+       </row>
+		<row height="60">
+            <image image="data/puzzles/images/puzzle_10.png"/>
+        </row>
+        <row height="20">
+          <multiplechoice image="data/puzzles/images/puzzle_10_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>	
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="11" points="2200">
+    <clues>
+      <a>Es fácil obtener las formas B y D utilizando las 4 piezas</a>
+      <b>Algo más de trabajo da obtener la forma A</b>
+      <c>También puedes obtener la forma C</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">Las piezas del rompecabezas que estoy haciendo se ensamblan sin dejar huecos ni superponerse. Con estas cuatro piezas, ¿cuál de las siguientes formas no puedo obtener?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_11.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_11_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="12" points="9700">
+    <clues>
+      <a>La tercera pieza tiene un cubo adelante y tres cubos detrás</a>
+      <b>La pieza de adelante está en el medio </b>
+      <c>No es la pieza E</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">Estoy armando la base para una estatua con 3 piezas de 4 cubos cada una y me falta colocar una de ellas. ¿Cuál de éstas crees que es la pieza que me falta?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_12.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_12_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="13" points="11900">
+    <clues>
+      <a>Observa que el número de hexágonos a cubrir es 17</a>
+      <b>Fíjate cuáles de las piezas suman 17 hexágonos entre las dos</b>
+      <c>Observa que si colocas la pieza 2, no puedes colocar otra</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="20">
+            <label font_size="16">Necesito terminar este mosaico con dos de las piezas que tengo aquí. ¿Cuáles crees que son las dos piezas que debo elegir? </label>
+        </row>
+		<row height="60">
+            <image image="data/puzzles/images/puzzle_13.png"/>
+        </row>
+        <row height="20">
+          <multiplechoice image="data/puzzles/images/puzzle_13_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="15" points="12700">
+    <clues>
+      <a>Calcula el número de Halcones de Plata que hay en 4 kg</a>
+      <b>Determina el valor de los 4 kg de monedas de Halcones de Plata y ten en cuenta que es equivalente al valor de 1 kg de Leones de Oro</b>
+      <c>Calcula el número de Leones de Oro que hay en 1 kg y divide 1 kg entre el número de Leones de Oro que hay en ese peso</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">He perdido las pesas de mi balanza y pensé en usar las monedas de Terragrifus: Halcones de Plata y Leones de Oro. Sé que un kilogramo de Leones de Oro equivale, en dinero, a 4 kilogramos de Halcones de Plata. También que cada Halcón de Plata pesa 16 gramos. ¿Puedes decirme cuánto pesa un León de Oro?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_15_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="17" points="4300">
+    <clues>
+      <a>Calcula cuánto ahorró en los cuatro meses</a>
+      <b>Calcula cuánto le resta por ahorrar para completar el precio total</b>
+      <c>Divide 2400 entre 400</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">La piedra de moler se ha roto y debo comprar una nueva que cuesta 3600 Leones de Oro. He ahorrado 300 por mes durante los últimos 4 meses y desde el próximo mes podré ahorrar 400 por mes. ¿Dentro de cuántos meses podré comprar la piedra nueva? Debo avisarle a los granjeros para que no envíen grano hasta esa fecha.</label>
+        </row>
+        <row height="30">
+          <label font_size="20" vcentered="false">Podrá comprar la piedra dentro de             meses</label>
+          <text y="197" skip="0" width="10" name="t1" x="405"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">6</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="18" points="13100">
+    <clues>
+      <a>La cara opuesta del 4 tiene un 3</a>
+      <b>Los dados de los extremos están ubicados de la misma forma; por lo tanto, la cara pegada del primer dado tiene un 4</b>
+      <c>Las caras pegadas del dado del centro tienen un 2 y un 5</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="40">
+          <label font_size="16">Fineas me ha desafiado a calcular cuanto es la suma de todos los puntos de las caras pegadas de unos dados. Sé que la suma de las caras opuestas de un dado es 7, pero a todos nos ha dado un resultado diferente. ¿Puedes decirnos quién tiene razón?</label>
+        </row>
+        <row height="35">
+          <image image="data/puzzles/images/puzzle_18.png"/>
+        </row>
+        <row height="25">
+          <multiplechoice image="data/puzzles/images/puzzle_18_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="19"  points="5400">
+    <clues>
+      <a>Calcula la suma de los números del lado del cuadrado que está completo </a>
+      <b>Calcula, en cada uno de los lados restantes, la suma de los 3 números que figuran </b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="75">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="14">Tengo un problema con mi jardin. Lo planté formando un cuadrado en torno a la fuente. Para que el riego sea apropiado, la cantidad de plantas en los 4 canteros a cada lado de la fuente debe ser la misma. Algunos canteros fueron comidos por conejos y debo reponer las plantas que tenían. ¿Puedes ayudarme a calcular cuántas plantas necesito en total?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_19.png"/>
+          </column>
+        </row>
+        <row height="25">
+          <multiplechoice image="data/puzzles/images/puzzle_19_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="20"  points="8100">
+    <clues>
+      <a>La suma de los tres es igual al triple del central   </a>
+      <b>Para pasar de un impar al siguiente debes sumar 2 </b>
+      <c>Para pasar de un impar al anterior debes restar 2</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">		  
+          <column width="100">
+            <label font_size="16">Mira, el viento se llevó los carteles que había puesto con la cantidad de cucharas que había en cada una de estas 3 cajas. Me llevó mucho tiempo contarlas y  solo me acuerdo de que eran 3 números impares consecutivos que sumaban 381. ¿Puedes ayudarme a recordar el primero de los tres?</label>
+          </column>          
+        </row>
+		<row height="10" />		  
+        <row height="20">
+          <label vcentered="false">Había          cucharas en cada caja.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>		  
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">125</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="22" points="2800">
+    <clues>
+      <a>En cada bolsillo viven 3x7 ratoncitos</a>
+      <b>En la chaqueta viven 21x31 ratoncitos</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label>¡Tengo una adivinanza! La chaqueta de un gigante tiene 31 bolsillos. En cada bolsillo viven 7 ratones y cada ratón está acompañado por 3 ratoncitos. ¿Cuántos ratoncitos viven en la chaqueta del gigante?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_22_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="24"  points="12700">
+    <clues>
+      <a>Si un alumno contesta en forma correcta todas las preguntas, obtiene 80 puntos</a>
+      <b>Por cada respuesta incorrecta pierde 3 de los 80 puntos</b>
+      <c>Perdió  24 de los 80 puntos; por lo tanto, contestó mal 8 preguntas</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Recién terminé un examen sobre las Lunas de Terragrifus que tenía 40 preguntas. Sé que obtuve 2 puntos por cada respuesta correcta, 0 punto por cada respuesta sin responder y que perdí 1 punto por cada respuesta incorrecta. Contesté todas las preguntas y obtuve 56 puntos. ¿Cuántas preguntas contesté bien?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_24_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="25" points="14100">
+    <clues>
+      <a>Considera que la estatura sea 100 cm; el 25 % de 100 es 25</a>
+      <b>El 20 % de 125 es 25</b>
+      <c>El 20 % de 100 es 20 y el 10 % de 120 es 12</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Soñé que bebía de una botella que decía: "Bébeme y crecerás un 25 %”, luego comía una porción de torta que tenía un cartel que decía “puébame y te encogerás un 20 %”, más tarde comía un caramelo en cuyo envoltorio decía “cómeme y crecerás un 20 %” y por último bebía otro líquido que en su etiqueta decía “bébeme y te encogerás un 10 %”. ¿Cuál fue el porcentaje de aumento en mi estatura en mi sueño?</label>
+        </row>
+		<row height="5"/>
+        <row height="25">
+          <label vcentered="false">Su estatura aumentó          %</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">8</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="26" points="19136">
+    <clues>
+      <a>Al final cada uno tiene 16 figuritas</a>
+      <b>En el paso anterior Aldo y Busteus tenían 8 cada uno</b>
+      <c>Inicialmente Busteus tenía 14 y Carl tenía 8</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Aldo, Busteus y Carl tienen en total, 48 figuritas. Primero, Aldo les entrega a sus dos amigos tantas figuritas como cada uno de ellos tiene. Luego, Busteus le entrega a sus dos amigos tantas figuritas como cada uno de ellos tiene. Por último, Carl les entrega a sus dos amigos tantas figuritas como cada uno de ellos tiene. De esta manera, los tres amigos quedan con igual cantidad de figuritas. ¿Cuántas figuritas tenía Aldo inicialmente?</label>
+        </row>
+		<row height="5"/>
+        <row height="25">
+          <label vcentered="false">Aldo inicialmente tenía          figuritas.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">26</value>
+      </answer>
+    </answers>
+  </exercise>  
+  <exercise id="27" points="13100">
+    <clues>
+      <a>El objeto amarillo pesa 60 gramos </a>
+      <b>Dos objetos verdes y dos objetos rojos pesan 120 gramos</b>
+      <c>Cada uno de los objetos verdes y los dos objetos rojos juntos pesan 40 gramos</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="30">
+          <label font_size="14">Tengo un problema con un cliente. Quiere una pieza cuadrada para un adorno colgante. Me hizo el dibujo y lo único que me dijo es que las piezas iguales pesan lo mismo y que las redondas pesan 30g. ¿Cuánto debería pesar cada pieza cuadrada?</label>
+        </row>
+        <row height="45">
+          <image image="data/puzzles/images/puzzle_27.png"/>
+        </row>
+		<row height="10" />
+        <row height="15">
+          <label vcentered="false">Cada pieza cuadrada pesa          g</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">20</value>
+      </answer>
+    </answers>
+  </exercise>
+    <exercise id="28" points="19742">
+    <clues>
+      <a>Observa que el primer soporte se forma con 7 bloques, el segundo con 12 bloques  y el tercero con 17 bloques</a>
+      <b>Para pasar de un lugar al siguiente siempre se agregan 5 bloques</b>
+      <c>El soporte del octavo lugar se formará con 7+5+5+5+5+5+5+5 bloques</c>
+    </clues>
+    <body> 
+		<column width="100">
+			<row height="20">
+				<label font_size="16">Ernestus está reconstruyendo el acueducto que trae el agua fresca del manantial de la montaña. Los soportes se construyen con bloques cuadrados. ¿Puedes decirme cuantos bloques se necesitan para el octavo soporte? Con los bloques se construyen soportes de la siguiente forma:</label>
+			</row>
+				<row height="65">
+				<image image="data/puzzles/images/puzzle_28.png"/>
+			</row>
+			<row height="15">
+				<label font_size="20" vcentered="false">Se necesitan          bloques.</label>
+				<text y="197" skip="0" width="10" name="t1" x="405"></text>
+			</row>
+		</column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">42</value>
+      </answer>
+    </answers>
+  </exercise>
+    <exercise id="29" points="20591">
+    <clues>
+      <a>Observa que el primer soporte se forma con 7 bloques, el segundo con 12 bloques y el tercero con 17 bloques</a>
+      <b>Para pasar de un lugar al siguiente siempre se agregan 5 bloques</b>
+      <c>El soporte del octavo lugar se formará con 7+5+5+5+5+5+5+5 bloques</c>
+    </clues>
+    <body>
+		<column width="100">
+			<row height="20">
+				<label font_size="16">Ernestus está reconstruyendo el acueducto que trae el agua fresca del manantial de la montaña. Los soportes se construyen con bloques cuadrados. ¿Puedes decirme cuantos bloques se necesitan para el soporte número 2011? Con los bloques se construyen soportes de la siguiente forma:</label>
+			</row>
+			<row height="65">
+				<image image="data/puzzles/images/puzzle_28.png"/>
+			</row>		
+			<row height="15">
+				<label font_size="20" vcentered="false">Se necesitan          bloques.</label>
+				<text y="197" skip="0" width="20" name="t1" x="405"></text>
+			</row>
+		</column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">10057</value>
+      </answer>
+    </answers>
+  </exercise>  
+  <exercise id="30" points="5400">
+    <clues>
+      <a>Calcula cuánto dinero tendría si tuviese una moneda de cada valor</a>
+      <b>Divide el total de dinero entre 18</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">A ver si eres tan inteligente... Tengo en mi alcancía monedas de $1, $2, $5 y $10. Curiosamente, hoy tengo la misma cantidad de monedas de los cuatro valores. En total tiene $7326. ¿Cuántas monedas tengo de cada valor?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_30_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="34"  points="11000">
+    <clues>
+      <a>Para saber qué número había antes del 90, debes multiplicarlo por 7</a>
+      <b>Para saber qué número había antes del 630, debes dividirlo entre 18 </b>
+      <c>Para saber qué número había antes del 35, debes restarle 15</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Estaba haciendo unas cuentas con mi ábaco y se me ha caído. Mira, recuerdo que le sumé 15, luego multipliqué por 18, por último dividí entre 7 y el resultado era 90. No recuerdo con cuánto empecé y es importante. ¿Me ayudas a calcularlo?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_34_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+    <exercise id="35" points="20419">
+    <clues>
+      <a>Aparece en el propio 40</a>
+      <b>Aparece en todos los números de 3 cifras terminados en 40</b>
+      <c>Aparece en todos los números de 3 cifras que empiezan con 40</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Los números naturales desde el 1 al 1000 se escriben en orden creciente, en forma consecutiva, formando el número: 12345678910111213141516171819202122 ... 9929939949959969979989991000. En ese número, ¿cuántas veces aparece escrito "40"?</label>
+        </row>
+        <row height="30">
+          <label font_size="20" vcentered="false">El "40" aparece escrito          veces.</label>
+          <text y="197" skip="0" width="10" name="t1" x="405"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">20</value>
+      </answer>
+    </answers>
+  </exercise>    
+  <exercise id="37" points="9600">
+    <clues>
+      <a>Observa que el ciclo que se repite es ABCDEFGFEDCB </a>
+      <b>Analiza cuántas veces entra el ciclo completo en 2011 lugares</b>
+      <c>Determina qué letras se debe agregar después de 167 ciclos completos para llegar al lugar 2011</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="14">¡Tengo una adivinanza! Si tengo la sucesión de letras ABCDEFGFEDCBABCDEFGFEDCBABCDEFGFEDCBABCDEFGFEDCBA.... ¿Cuál es la letra que ocupa el lugar 2011? ¡Seguro que no lo sabés!</label>
+        </row>
+		<row height="5"/>
+        <row height="25">                
+          <label vcentered="false">La letra es          .</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">G</value>
+      </answer>
+	  <answer>
+        <value name="t1">g</value>
+      </answer>	  
+    </answers>
+  </exercise>
+  <exercise id="38" points="9900">
+    <clues>
+      <a>Los 18 pasteles de chocolate son la mitad de la caja</a>
+      <b>De los 36 pasteles de la caja, calcula cuántos son de dulce de leche y cuántos son de fruta</b>
+      <c>De los 36 pasteles de la caja, 18 son de chocolate, 9 son de dulce de leche y 6 son de fruta</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">¡Llegas justo a tiempo! Acabo de traer estas cajas de pasteles de 3 sabores para vender en mi tienda pero todas tienen el sello de envío arriba de donde dice cuántos son de coco. La caja trae 18 pasteles y el paquete dice que la mitad son de chocolate, la cuarta parte son de dulce de leche y la sexta parte son de frutas. ¿Puedes decirme cuantos alfajores de coco trae cada caja?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">Cada caja trae          alfajores de coco.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="40"  points="9600">
+    <clues>
+      <a>Debe elegir una de las tres camisetas</a>
+      <b>Con cada una de las tres camisetas, puede utilizar cualquiera de los dos pantalones cortos</b>
+      <c>Con cada una de las seis combinaciones de camiseta y pantalón corto, puede utilizar cualquiera de los dos pares de medias</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¡No sé como ir vestido al Torneo de Campeones! Tengo una camiseta verde, otra roja y otra azul, un pantalón corto negro y otro blanco, un par de medias negras y otras azules. ¿De cuántas formas diferentes me puedo vestir?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_40_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="41" points="10500">
+    <clues>
+      <a>Observa cuál es la cifra de las unidades en cada uno de los resultados que hallaste</a>
+      <b>Multiplica por sí mismos los números del 0 al 9 </b>
+      <c>¿Alguno termina en 7?</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¡A ver si podés con este problema! Un número es un cuadrado perfecto cuando es el resultado de multiplicar un número natural por sí mismo (121 es un cuadrado perfecto porque 121=11x11, 1225 es un cuadrado perfecto porque 1225=35x35). ¿Cuál de los números siguientes no es un cuadrado perfecto? </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_41_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="42" points="12300">
+    <clues>
+      <a>Al dividir entre 5, los únicos restos que se pueden obtener son 0, 1, 2, 3 o 4; esos cinco restos suman 10 </a>
+      <b>El ciclo de restos 1, 2, 3, 4, 0 se repite 402 veces hasta dividir 2010 entre 5</b>
+      <c>Al dividir 2011 entre 5 el resto es 1</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Hoy me levanté con una duda que no me puedo sacar de la cabeza. Me la pasé todo el día pensando y no logro dar con la respuesta. Si a todos los números del 1 al 2011 los divido entre 5. ¿Cuánto es la suma de los restos de todas esas divisiones?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_42_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="43" points="13900">
+    <clues>
+      <a>Al dividir entre 7, los únicos restos que se pueden obtener son 0, 1, 2, 3, 4, 5 o 6; esos siete restos suman 21</a>
+      <b>El ciclo de restos 0, 1, 2, 3, 4, 5, 6 se repite 144 veces al dividir desde 1001 hasta 2008 entre 7</b>
+      <c>Al dividir 1000 entre 7 el resto es 6, al dividir 2009 entre 7 el resto es 0, al dividir 2010 entre 7 el resto es 1 y al dividir 2011 entre 7 el resto es 2</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Un amigo me preguntó algo que no le supe responder… Si a todos los números del 1000 al 2011 los divido entre 7 y sumo todos los restos de esas divisiones. ¿Qué resultado obtengo?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_43_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="47"  points="13900">
+    <clues>
+      <a>Los productos iguales a 48 con dos factores iguales son 1x1x2x24 1x1x3x16 1x1x4x12 1x1x6x8 1x2x2x12 1x3x4x4 2x2x3x4 </a>
+      <b>Si hay un único hermano menor, solamente quedan 1x2x2x12 y 1x3x4x4 </b>
+      <c>Si hay un único hermano mayor, solamente queda 1x2x2x12</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Soy amigo de cuatro hermanos y quiero calcular sus edades. Averigué que dos de los hermanos son gemelos, que el producto de la edades de los cuatro hermanos es 48, que la edad del que tiene menor edad es un número impar y que el que tiene mayor edad ayer se sacó un sobresaliente en matemática. ¿Me puedes decir qué edad tiene el mayor de los cuatro hermanos?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">El mayor tiene          años.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">12</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="49" points="13500">
+    <clues>
+      <a>Los cubitos que faltan no se ubican sobre la misma cara de la plataforma</a>
+      <b>La pieza D no encaja</b>
+      <c>La pieza C no encaja</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">Para construir un gallinero subterráneo tengo que terminar esta plataforma. ¿Me puedes decir cuál de las siguientes piezas completa la plataforma?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_49.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_49_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="52" points="8100">
+    <clues>
+      <a>Calcula la suma de las cifras de 5249 </a>
+      <b>Aplica varias veces la “transformación” y calcula la suma de las cifras de los números que obtienes</b>
+      <c>Calcula la suma de las cifras de 3472</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">¡Llevo varios días sin dormir! Hace 2 semanas en el trabajo me dijeron que le aplicara al número 5249 la siguiente transformación 1000 veces: &#13;
+i) Elige una cifra y le suma 4 &#13;
+ii) Elige otra cifra y le suma 2 &#13;
+iii) A una cifra la deja igual &#13;
+iv) A la restante cifra le resta 6 &#13;
+v) Mantiene siempre un número de cuatro cifras. &#13;
+Hice la transformación y obtuve el número 3472. ¿Te parece que es correcto?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_52_mc.png" number="2" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="53" points="11400">
+    <clues>
+      <a>Por 3 horas de trabajo le da 2 libros; ¿por cuánto tiempo le da 1 libro?</a>
+      <b>Por media hora de trabajo le da 6 revistas; ¿por cuánto tiempo le da 18 revistas?</b>
+      <c>¿Cuánto es 1 hora y media más 1 hora y media?</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Tengo un ayudante en la biblioteca, Luchus. El cobra su trabajo en material de lectura. El lunes Luchus trabajó 3 horas y se llevó 2 libros, el martes trabajó media hora y se llevó 6 revistas. No me anotó las horas que trabajó el miércoles pero con el mismo criterio se llevó 1 libro y 18 revistas. ¿Puedes decirme cuantas horas trabajó Luchus el miércoles?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">Luchis trabajó          horas.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="54"  points="14100">
+    <clues>
+      <a>Si uno de los sumandos tiene 3 cifras y el otro sumando tiene 2 cifras, la cifra P de las unidades de mil de la suma debe ser 1 </a>
+      <b>En la columna de las decenas solo te puedes llevar 1, por lo tanto M es 9 y Q es 0</b>
+      <c>Si en M+N te llevas 1, M+N=17</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="60">
+            <label font_size="15">¡Mi hermana es insoportable! ¡Dice que quiere ser una cazaproblemas y todo el tiempo me está fastidiando! Hoy me dio este papel con una cuenta para llevarle a mamá al almacén y para hacese la lista cambió los números por letras. Me dijo que letras diferentes representan dígitos diferentes. ¿Me ayudás a encontrar el valor de R así se lo llevo a mamá?</label>
+          </column>
+          <column width="35">
+            <image image="data/puzzles/images/puzzle_54.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_54_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="55" points="14300">
+    <clues>
+      <a>Faria se ubica en el tercer lugar</a>
+      <b>Ankama se ubica en el segundo lugar</b>
+      <c>El 2010 lo nombra el amigo que se ubica en el primer lugar</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¡A ver si sacás ésta adivinanza! Tres amigos se ubican en fila. El primero dice 3, el segundo dice 6, el tercero dice 9, el primero dice 12, el segundo dice 15 y, así sucesivamente, siguen contando de 3 en 3, respetando el orden. Faria nombra el 27, Diegus nombra el 75 y Ankama nombra el 42. ¿Cuál de los tres amigos nombra  el 2010? </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_55_mc.png" number="3" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="56" points="56">
+    <clues>
+      <a>Busca los 6 rectángulos formados por una única zona </a>
+      <b>Busca los 7 rectángulos formados por dos zonas</b>
+      <c>Busca los 2 rectángulos formados por tres zonas, los 2 rectángulos formado por 4 zonas y el único rectángulo formado por 6 zonas</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="20">
+          <label>¿Cuántos rectángulos hay dibujados en la siguiente figura?</label>
+        </row>
+        <row height="60">
+          <image image="data/puzzles/images/puzzle_56.png"/>
+        </row>
+        <row height="20">
+          <multiplechoice image="data/puzzles/images/puzzle_56_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+      <exercise id="59" points="19246">
+    <clues>
+      <a>Calcula la medida del lado AC del rectángulo</a>
+      <b>La medida del lado AC del rectángulo es 12 cm</b>
+      <c>El polígono ABCDEF tiene 4 lados de 12 cm y dos lados de 4 cm </c>
+    </clues>
+    <body>
+		<row height="85">
+			<column width="60">
+				<label font_size="16">Un alumno quiere hacerse unas alas para su disfraz de la fiesta de fin de año y necesita comprar alambre para ponerle en el contorno.  Los triángulos ABC y DEF son equiláteros. La medida del segmento CD es 4cm. El perímetro del rectángulo ACDF es 32 cm. ¿Cuánto alambre necesita comprar en cm para cubrir el polígono ABCDEF?</label>
+			</column>
+			<column width="40">
+				<image image="data/puzzles/images/puzzle_59.png"/>
+			</column>			
+		</row>		
+        <row height="15">
+          <label font_size="20" vcentered="false">Necesita comprar           cm.</label>
+          <text y="197" skip="0" width="10" name="t1" x="405"></text>
+        </row>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">56</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="61" points="4900">
+    <clues>
+      <a>La pieza de la Opción A aparece en la esquina inferior izquierda en el cuadrado</a>
+      <b>La pieza de la Opción B aparece dos veces, una en forma horizontal y otra en forma vertical, en el cuadrado</b>
+      <c>La pieza de la Opción C aparece en la esquina superior izquierda en el cuadrado y la pieza de la opción E aparece en la esquina inferior derecha en el cuadrado</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="60">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">Voy a recortar este cuadrado en seis piezas para hacerme un Tetris de cartón. ¿Cuál de las siguientes piezas crees que no voy a obtener?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_61.png"/>
+          </column>
+        </row>
+        <row height="40">
+          <multiplechoice image="data/puzzles/images/puzzle_61_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="63" points="2800">
+    <clues>
+      <a>El número de cajas que tiene Harius en la biblioteca es igual a 5x4 </a>
+      <b>El número de pinturas que tiene Harius es igual a 20x24</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Quiero regalarle un exhibidor para sus pinturas a mi esposo Harius. Él guarda todas sus pinturas en cajas que tiene en su biblioteca. La biblioteca tiene 5 estantes; en cada estante guarda 4 cajas; en cada caja tiene 24 pinturas. ¿Cuántas pinturas tiene guardadas mi esposo?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">Tiene guardadas          pinturas.</label>
+          <text y="195" skip="0" width="30" name="t1" x="191"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">480</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="64" points="56">
+    <clues>
+      <a>En la cifra de las unidades lo escribimos 90 veces</a>
+      <b>En la cifra de las decenas lo escribimos 90 veces</b>
+      <c>En la cifra de las centenas lo escribimos 100 veces</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label>Si escribimos todos los números enteros de 3 cifras, ¿cuántas veces escribimos la cifra 8?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">La escribimos          veces.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">280</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="65"  points="13500">
+    <clues>
+      <a>El rectángulo más chico que se puede formar a partir de la pieza F es de 5x3; se necesita para ello una pieza con 7 cuadraditos </a>
+      <b>Para formar un rectángulo de 5x4 se necesitan 12 cuadraditos </b>
+      <c>Para formar un rectángulo de 6x3 se necesitan 10 cuadraditos </c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="60">
+		  <column width="5"/>	
+          <column width="60">
+            <label font_size="16">Estoy diseñando un disfraz novedoso y preciso formar un rectángulo con la pieza que tengo. Lumen me acaba de enviar todas las piezas que le quedaban  ¡No me doy cuenta cuál tengo que usar! ¿Me ayudás? ¿Cuál es la pieza de Lumen que tengo que usar para completar un rectángulo con la mía?</label>
+          </column>
+          <column width="35">
+            <image image="data/puzzles/images/puzzle_65.png"/>
+          </column>                       
+        </row>
+        <row height="40">
+          <multiplechoice image="data/puzzles/images/puzzle_65_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="67"  points="10500">
+    <clues>
+      <a>De la columna de las unidades surge que el doble de A termina en 0</a>
+      <b>De la columna de las decenas surge que B+1=A</b>
+      <c>C debe ser 1</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">¡Mi novio me hace bromas todo el tiempo! Me cambió los dígitos de esta suma de mi libreta por letras y preciso saber qué decía. Dejó una nota que dice "Letras iguales representan dígitos iguales y letras distintas representan dígitos distintos". ¿Me podés ayudar por favor?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_67.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_67_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="68" points="56">
+    <clues>
+      <a>Si mueves el cubito que está adelante y al medio, puedes obtener los cuerpos (a) y (b)</a>
+      <b>Si mueves el cubito que está más a tu izquierda, puedes obtener el cuerpo (c)</b>
+      <c>Si mueves el cubito que está arriba, puedes obtener el cuerpo (e)</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">Utilizando 5 cubitos de madera el carpintero de la Academia armó este cuerpo. Luego cambió de posición únicamente 1 de los 5 cubitos. ¿Cuál de los siguientes cuerpos no pudo obtener?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_68.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_68_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="69" points="5000">
+    <clues>
+      <a>Los dígitos A y D deben ser diferentes de 0 y el producto Ax9 no puede tener 2 dígitos</a>
+      <b>El producto Bx9 no puede tener 2 dígitos y B no puede ser 1</b>
+      <c>9xC+8 tiene la cifra de las unidades igual a 0</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="14">¡Me dijeron que hay un número de 4 cifras diferentes que multiplicado por 9 te da el mismo número escrito al revés! ¡Es genial! Para ayudarme a calcularlo hice este esquema pero hace horas que me estoy rompiendo la cabeza y no me doy cuenta cuál és. ¿Me puedes ayudar diciéndome qué valor tiene el dígito C de mi esquema?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_69.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_69_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="72"  points="4600">
+    <clues>
+      <a>51 es el triple de 17</a>
+      <b>Para que se triplique la diagonal de un rectángulo, se deben triplicar el largo y el ancho</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Cuando decimos en Terragrifus que las pantallas son de 17 pulgadas, significa que la diagonal de la pantalla mide 17 pulgadas. ¿A ver si te das cuenta cuántas pantallas de 17 pulgadas caben en una pantalla de 51 pulgadas?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_72_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="73"  points="4100">
+    <clues>
+      <a>En el cajón del hermano hay medias de 3 colores</a>
+      <b>Si saca 2 medias, puede ocurrir que sean de diferente color</b>
+      <c>Si saca 3 medias, puede ocurrir que todas sean de diferente color</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">En el cajón de las medias de mi hermano hay 18 medias grises, 12 azules y 8 marrones. Mis medias están todas rotas y él no me quiere prestar un par para mi fiesta de esta noche. Voy a entrar rápido mientras duerme a agarrar uno y no puedo prender la luz. ¿Cuántas medias deberé sacar del cajón para asegurarme que me llevo dos medias del mismo color? </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_73_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="74" points="5800">
+    <clues>
+      <a>En el cajón del hermano hay medias de 3 colores</a>
+      <b>Si saca 26 medias, puede ocurrir que todas sean grises o marrones</b>
+      <c>Si saca 27 medias, puede ocurrir que solamente 1 sea azul</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">En el cajón de las medias de mi hermano hay 18 medias grises, 12 azules y 8 marrones. Mis medias están todas rotas y él no me quiere prestar un par para mi fiesta de esta noche. Voy a entrar rápido mientras duerme a agarrar uno y no puedo prender la luz. ¿Cuántas medias deberé sacar del cajón para asegurarme que me llevo dos medias azules? </label>
+        </row>
+        <row height="5"/>
+        <row height="25">       
+          <label vcentered="false">Debo sacar          medias.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">28</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="75" points="4100">
+    <clues>
+      <a>Los números múltiplos de 5 tienen como cifra de las unidades la cifra 0 o la cifra 5</a>
+      <b>La cifra de las unidades de mil debe ser 2 o un número mayor que 2</b>
+      <c>La suma de las cuatro cifras del código es 9 y ninguna de ellas es 0</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¡Me olvidé del código de ingreso a la sala de máquinas!. Sin embargo recuerdo que es un número de cuatro cifras mayor que 2011, que es un número múltiplo de 5, que la suma de las cuatro cifras es 9 y que ninguna de las cuatro cifras es 0. Ayudame por favor a descifrarlo. </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_75_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="76" points="58">
+    <clues>
+      <a>Para que la diferencia sea lo mayor posible, debes elegir el mayor número de 3 cifras pares diferentes y el menor número de 3 cifras impares diferentes</a>
+      <b>El mayor número de 3 cifras pares diferentes es 864</b>
+      <c>El menor número de 3 cifras impares diferentes es 135</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Si el Entrenador Amarillo tiene una lista de todos los números de 3 cifras diferentes, todas ellas pares y el Entrenador Azul tiene una lista de todos los números de 3 cifras diferentes, todas ellas impares. Si te dan a elegir un número de la lista del Entrenador Amarillo y le restas un número de la lista del Entrenador Azul. ¿Cuál es el mayor resultado que puedes obtener?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">El número          .</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">729</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="78"  points="7200">
+    <clues>
+      <a>Si una batería y un lápiz inalámbrico cuestan $ 750, calcula cuánto cuestan dos baterías y dos lápiz inalámbrico.</a>
+      <b>Calcula el precio de una batería teniendo en cuenta que tres bateías y dos lápices inalámbricos cuestan $ 1750 y que dos baterías y dos lápices cuestan $ 1500</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¡Le pedí a Minion que me pagara una batería de vis  porque no me daban las monedas y ahora no me la quiere cobrar! Por una batería y un lápiz inalámbrico me cobraban 750 Leones de Oro. Minion compró 3 baterías como la mía y 2 lápices inalámbricos y le cobraron 1750 Leones de Oro. ¿Cuál era el precio de mi batería de vis?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_78_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="79" points="2200">
+    <clues>
+      <a>La figura 2 aparece al final de la silueta</a>
+      <b>La figura 3 aparece en el centro de la silueta</b>
+      <c>Las figuras 1 y 5 aparecen entre el centro y el final de la silueta</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="35">
+          <label font_size="16">Cuando venía en barco a Terragrifus hice unos bocetos de la silueta de la ciudad y se me han mezclado. ¿Puedes ayudarme a saber cuál de estos bocetos no es parte de la silueta de la ciudad?</label>
+        </row>
+        <row height="30">
+          <image image="data/puzzles/images/puzzle_79.png"/>
+        </row>
+        <row height="35">
+          <multiplechoice image="data/puzzles/images/puzzle_79_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="80"  points="14300">
+    <clues>
+      <a>De la casa de Carla a la casa de Diana hay 12 metros de distancia</a>
+      <b>De la casa de Ana a la casa de Beto hay 7 metros de distancia</b>
+      <c>De la casa de Beto a la casa de Carla hay 32-19 metros de distancia</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="35">
+          <label font_size="14">Aldus, Betia, Carlina y yo vivimos en la misma cuadra, en el orden que se muestra en la figura. &#13;
+De la casa de Aldus a la casa de Carlina hay 20 metros de distancia, de la casa de Betia a mi casa hay 25 metros de distancia y de la casa de Aldus a mi casa hay 32 metros de distancia. ¿Qué distancia hay, en metros, de la casa de Betia a la casa de Carlina?&#13;
+</label>
+        </row>
+        <row height="40">
+          <image image="data/puzzles/images/puzzle_80.png"/>
+        </row>
+        <row height="25">
+          <multiplechoice image="data/puzzles/images/puzzle_80_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="81"  points="12300">
+    <clues>
+      <a>El 0 es el único múltiplo de 10 que se forma con una sola cifra</a>
+      <b>Con cuatro cifras se pueden formar 6 múltiplos de 10 (ej. 3240)</b>
+      <c>Con tres cifras se pueden formar 6 múltiplos de 10 (ej. 420) y con dos cifras se pueden formar 3 múltiplos de 10 (ej. 30)</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Hola, mi amiga Ania me ha dado estas tarjetas numeradas: 3, 0, 2 y 4 y me ha desafiado a que forme con ellas números que sean múltiplos de 10. Puedo usar en cada número que forme la cantidad de tarjetas que quiera (una, dos, tres o las cuatro) y puedo utilizar cada tarjeta todas las veces que necesite en distintos números. ¿Cuántos números diferentes puedo formar?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_81_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="83" points="55">
+    <clues>
+      <a>El perímetro de un rectángulo es igual al doble de la suma de las medidas de la base y de la altura; el área de un rectángulo es igual al producto de las medidas de la base y de la altura</a>
+      <b>En la opción 1 el área es 150 cm2</b>
+      <c>En la opción 2 el perímetro es 58 cm y en la opción 4 el perímetro es 40 cm</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¡Ahora saldré de dudas! Mandé unos ayudantes a hacer mediciones de un loza que debo reemplazar. Todos coinciden en que su perímetro es 50 cm y su área es 100 centrímetros cuadrados. Pero me han dado distintas medidas de la base y la altura. ¿Puedes decirme cuáles son las medidas correctas?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_83_mc.png" number="4" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="84" points="55">
+    <clues>
+      <a>Si “pasado mañana será viernes”, “hoy” es miércoles</a>
+      <b>Miércoles es el día siguiente a martes</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Este año, el día siguiente al día del cumpleaños de Quimerius, uno de los entrenadores aseguró: “pasado mañana será viernes”. ¿Qué día de la semana fue el cumpleaños de Quimerius?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_84_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="85" points="7200">
+    <clues>
+      <a>Si ambos tuvieran el mismo peso, cada uno de ellos pesaría 55 kg</a>
+      <b>Si el tío pesa 46 kg más que él, uno pesa 23 kg más de 55 kg y el otro pesa 23 kg menos de 55 kg.</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">No estoy seguro si el bote aguantará el peso de mi padre y no me quiere decir cuanto está pesando. Mi tío dice que pesa 46 kilogramos más que mi padre. Y los dos juntos pesan 110 kilogramos. ¿Cuántos kilogramos pesa mi padre?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_85_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="88" points="5800">
+    <clues>
+      <a>Con piezas de 4 formas, de 2 tamaños diferentes cada una, hay 4x2 piezas</a>
+      <b>Con piezas de 8 formas y tamaños, de 2 grosores diferentes cada una, hay 8x2 piezas</b>
+      <c>Con 16 formas, tamaños y grosores, de 3 colores diferentes cada una, hay 16x3 piezas </c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Creo que perdí una pieza de madera de éste Luudo (juego de caja de Terragrifus). En el juego hay piezas con la cara superior de cuatro formas diferentes (triángulo, círculo, cuadrado, rectángulo). Todas las formas se presentan en dos tamaños (grande y pequeño), en dos grosores (grueso y fino) y en tres colores (rojo, amarillo y verde). Para estar seguro me serviría saber cuántas piezas diferentes contiene una caja de Luudo. ¿Me lo dirías?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_88_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="90" points="58">
+    <clues>
+      <a>Si tiene 14 compañeros delante de él, Diego ocupa el lugar 15</a>
+      <b>Si hay 7 compañeros entre Aldo y Diego, Aldo ocupa el lugar 7</b>
+      <c>Si hay 16 compañeros detrás de Aldo, el número de alumnos es 7+16</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Si todos los alumnos que hoy pasaron por esta torre hicieran una fila por orden de llegada, tú tendrías 16 compañeros por detrás (una de las cuales es Lis). Lis tendría 14 compañeros por delante de ella (uno de los cuales serías tú). Entre tú y Lis hay 7 compañeros. ¿Cuántos alumnos pasaron hoy por aquí?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_90_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="91" points="8600">
+    <clues>
+      <a>Si sumamos 297 y 359, contamos dos veces lo caramelos de menta</a>
+      <b>El número de caramelos de menta que vendió es 656-470</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Yo vendo en mi puesto caramelos de naranja, limón, menta, manzana y aloe. Ayer vendí, en total, 470 caramelos. Entre los de naranja, limón y menta vendí 297 caramelos. Entre los de menta, manzana y aloe vendí 359 caramelos. ¿Cuántos caramelos de menta vendí?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_91_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="92" points="55">
+    <clues>
+      <a>A tu mejor amigo le regalaste 48</a>
+      <b>A tu mejor amiga le regalaste 32</b>
+      <c>Te quedaron 96-80</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Si tienes 96 figuritas de los grandes cazaproblemas de la historia y le regalas la mitad a tu mejor amigo y la tercera parte a tu mejor amiga. ¿Con cuántas figuritas te quedas?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_92_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">0</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="93" points="55">
+    <clues>
+      <a>A su mejor amigo le regaló 64</a>
+      <b>A su mejor amiga le regaló la cuarta parte de 128</b>
+      <c>Le quedaron 192-96</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Si tienes 192 figuritas de los grandes cazaproblemas de la historia y le regalas la tercera parte a tu mejor amigo y la cuarta parte del resto a tu mejor amiga. ¿Con cuántas figuritas te quedas?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_93_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="94"  points="3200">
+    <clues>
+      <a>En cada capa puso 9 cajas </a>
+      <b>De la capa inferior no sacó ninguna caja</b>
+      <c>En la capa superior dejó 2 cajas</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="35">
+          <label font_size="16">¡No lo puedo creer! ¡Cuando me fui hoy de mañana estoy seguro que estaban todas las cajas y ahora vengo y algunas no están! ¿Me podés ayudar y decirme cuántas me sacaron? ¡Seguro que fue el hermano de mi novia para molestarme!</label>
+        </row>
+        <row height="45">
+          <image image="data/puzzles/images/puzzle_94.png"/>
+        </row>
+		<row height="5" />
+        <row height="15">
+          <label vcentered="false">Le sacaron          cajas.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">7</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="96" points="9100">
+    <clues>
+      <a>Si está detrás de Camila, Ana no puede ocupar el primer lugar</a>
+      <b>Si está detrás de Diana, Beatriz no puede ocupar el primer lugar</b>
+      <c>Si Diana está antes de ella, Camila no puede ocupar el primer lugar</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Tengo que terminar estos diplomas. Ana, Beatriz, Camila, Diana y Elena forman una fila. Ana está detrás de Camila; Beatriz está antes de Ana e inmediatamente detrás de Diana; Diana está antes de Camila pero ella no es la primera en la fila. ¿Quién ocupa el primer lugar de la fila? </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_96_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="98" points="2600">
+    <clues>
+      <a>Ningún número par termina en 5</a>
+      <b>El ayudante solamente escribió el 5 en los números pares de la decena del 50</b>
+      <c>Únicamente escribió los números 50, 52, 54, 56 y 58</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Esta vieja imprenta aún usa piezas para cada número y letra. Mi ayudante escribió un artículo en el que usó todos los números pares entre el 21 y el 123. ¿Puedes decirme cuantas veces usó el número 5? No se si poseo tantas piezas de ese número.</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_98_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="99" points="9900">
+    <clues>
+      <a>32 es el doble de las figuritas que tiene Evarius</a>
+      <b>El triple de 16 es 48</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">¿Puedes ayudarme? Mis hermana me dijo que me regalaría las figuritas que me faltan de Grandes Cazaproblemas de la Historia si averiguo cuántas tiene. Me ha dicho que ella tiene 32 figuritas más que Evarius. También escuché que ella tiene el triple de las figuritas que Evarius. ¿Cuántas figuritas tiene mi hermana?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">La hermana tiene          figuritas.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">48</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="100"  points="4300">
+    <clues>
+      <a>En junio le había regalado la diferencia entre lo que le regaló en agosto y lo que le regaló en julio</a>
+      <b>En mayo le había regalado la diferencia entre lo que le regaló en julio y lo que le regaló en junio</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Mensualmente, mi hermano Lirius recibe dinero que le regala nuestro papá. La cantidad que recibe cada mes es la suma de las cantidades recibidas en los dos meses anteriores. Mi papá le regaló a Lirius  600 Lobos de Bronce en julio y  960 Lobos de Bronce en agosto. ¿Cuánto Lobos de Bronce le regaló en mayo? Dijo que me iba a empezar a dar esa cantidad ahora que ya soy mayor.</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_100_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="101" points="57">
+    <clues>
+      <a>Al partir de M se pueden elegir 2 caminos </a>
+      <b>Al pasar por B se pueden elegir 3 caminos</b>
+      <c>Al pasar por A se pueden elegir 2 caminos</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="90">
+		  <column width="5" />
+          <column width="50">
+            <label font_size="16">Nos pidieron ayuda en el diseño de un parque de diversiones. Este es un dibujo de los caminos del parque. ¿De cuántas formas se puede ir desde M hasta N si los caminos se pueden recorrer solamente en el sentido indicado?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_101.png"/>
+          </column>
+        </row>
+        <row height="10">
+          <multiplechoice image="data/puzzles/images/puzzle_101_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="102" points="7800">
+    <clues>
+      <a>En cada movimiento el cuadrado queda apoyado en un lado distinto.</a>
+      <b>En el primer movimiento el tiángulo queda apuntando hacia abajo</b>
+      <c>En el segundo movimiento el triángulo queda apuntando hacia adentro</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="35">
+          <label font_size="14">Uff! Vaya suerte, ¡un Cazaoproblemas! Mira estas piezas de la maquinaria. El engranaje cuadrado rueda sobre el engranaje hexagonal en sentido horario hasta quedar en la posición 2 del diagrama. Se ha borrado el triángulo indicador de la dirección de la maquinaria. ¿Puedes decirme en qué posición queda el triángulo al llegar a la posición 2?  </label>
+        </row>
+        <row height="45">
+          <image image="data/puzzles/images/puzzle_102.png"/>
+        </row>
+        <row height="20">
+          <multiplechoice image="data/puzzles/images/puzzle_102_mc.png" number="4" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="104"  points="3900">
+    <clues>
+      <a>Busca el único triángulo formado por una única zona</a>
+      <b>Busca los dos triángulos formados por dos zonas</b>
+      <c>Busca el único triángulo formado por cuatro zonas</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">Ésta es la insignia de mi familia. Cada triángulo dibujado en la figura representa a un integrante. ¿Cuántos integrantes tiene mi familia?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_104.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_104_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="105" points="4900">
+    <clues>
+      <a>Busca los dos triángulo formado por una única zona</a>
+      <b>Busca los tres triángulos formados por dos zonas</b>
+      <c>Busca el único triángulo formado por tres zonas, el único triángulo formado por cuatro zonas y el único triángulo formado por seis zonas</c>
+    </clues>
+    <body>
+      <column width="100">
+	    <row height="70">
+		  <column width="5"/>	
+		  <column width="50">
+			<label font_size="16">Escucha esto, Cazaproblemas. Este dilema me lo panteó mi padre cuando tenía tu edad. ¿Cuántos triángulos aparecen dibujados en esta figura? ¡A ver si eres mas listo de lo que yo era!</label>
+		  </column>
+		  <column width="45">
+			<image image="data/puzzles/images/puzzle_105.png"/>
+	      </column>
+		</row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_105_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="108"  points="10300">
+    <clues>
+      <a>Divide el total recaudado entre el precio de cada pasaje para determinar el total de pasajeros que hicieron el cruce</a>
+      <b>Al total de pasajeros que hicieron el cruce, le debes restar el número de pasajeros que subieron en las islas</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¿Puedes ayudarme? Estoy hecho un lío. La barcaza que va hasta la Isla Pegassus para en varios pueblos para levantar pasajeros. Cada pasaje cuesta 390 Halcones de Plata, sin importar la distancia que recorra el pasajero. La barcaza llegó a la isla con 124 pasajeros más que al partir y una recaudación total de 56940 Halcones de Plata. ¿Cuántos pasajeros llevaba al partir?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_108_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="109" points="3200">
+    <clues>
+      <a>Con dos pisos puede formar 5x4 torres</a>
+      <b>Con tres pisos puede formar 5x4x3</b>
+      <c>Con cuatro y con cinco pisos puede formar 5x4x3x2 torres de cada altura</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Me han encargado decorar la plaza. Tengo bloques de piedra que vienen de 5 colores. Pensé en poner uno encima del otro y hacer torres con esos bloques de al menos dos bloques cada una. ¿Cuántas torres diferentes podría armar?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_109_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="112" points="11400">
+    <clues>
+      <a>En cada isla aumenta 4 unidades el número de pasajeros</a>
+      <b>En total se vendieron 208 pasajes</b>
+      <c>En las 31 islas subieron, en total, 186 pasajeros</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¿Puedes ayudarme? Estoy hecho un lío. La barcaza que va hasta la Isla Pegassus para en varios pueblos para levantar pasajeros. Cada pasaje cuenta 390 Halcones de Plata, sin importar la distancia que recorra el pasajero. La barcaza llegó a la isla con 124 pasajeros mas que al partir y una recaudación total de 81120 Halcones de Plata. ¿Cuántos pasajeros llevaba al partir?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_112_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="115" points="55">
+    <clues>
+      <a>Cada una de las 24 partes marcadas en la gráfica circular representa 1 hora</a>
+      <b>6 partes pintadas representan la parte del día que Luskan pasa en el colegio.</b>
+      <c>Luskan pasa en el colegio 6 horas de las 24 horas del día</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">La gráfica circular muestra la parte del día que Luskan pasa en la Academia. ¿Qué fracción del día pasa Luskan en la Academia?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_115.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_115_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="118"  points="9700">
+    <clues>
+      <a>El perímetro de la figura está formado por 16 lados de cuadraditos.</a>
+      <b>Al dividir 96 entre 16 obtenemos la medida del lado de cada cuadradito.</b>
+      <c>El perímetro del rectángulo pintado de negro está formado por 10 lados de cuadraditos.</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">Buenas, soy hojalatero y me han pedido que arregle esta pieza. Está formada por 9 cuadraditos iguales y su perímetro es de 96 centímetros. Si sólo dejo los cuadraditos en negro, ¿cuál sería el perímetro total, en centímetros?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_118.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_118_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="120" points="56">
+    <clues>
+      <a>20 cm son la quinta parte de un metro</a>
+      <b>Un metro de piola te dura durante 5 días</b>
+      <c>Un metro le alcanza para 5 días, dos metros para 10 días, tres metros para 15 días, …</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Si compras un rollo de piola de 20 metros y cada día utilizas 20 centímetros. ¿Cuántos días te durará el paquete?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_120_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="122" points="57">
+    <clues>
+      <a>El producto indicado es igual a 36</a>
+      <b>Averigua el número que multiplicado por sí mismo da 36 </b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label>¿Cuál es el valor de M si sabemos que M x M= 2 x 2 x 3 x 3?</label>
+        </row>
+        <row height="5"/>
+        <row height="25">        
+          <label vcentered="false">El valor de M es          .</label>
+          <text y="193" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">6</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="123"  points="7600">
+    <clues>
+      <a>El Bromito lo toma a las 24, 48, 72, 96, 120 horas, etc.</a>
+      <b>El Bromato lo toma a las 18, 36, 54, 72, 90 horas, etc.</b>
+      <c>Calcula cuántos días equivalen a 72 horas</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Mi abuelo fue al doctor y éste le recetó que tomara dos medicamentos, Bromito y Bromato, juntos en ese momento,  pero que luego tomara Bromito cada 24 horas y Bromato cada 18 horas. ¿Cada cuántos días debe tomar los dos medicamentos juntos?</label>
+        </row>
+        <row height="5" />
+        <row height="25">        
+          <label vcentered="false">Los debe tomar juntos cada          días.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="124"  points="6300">
+    <clues>
+      <a>Pedro arma un rectángulo de lados 24cm y 6 cm</a>
+      <b>María arma un rectángulo de lados 8 cm y 18 cm</b>
+      <c>José arma una figura con 2 lados de 8cm, 2 lados de 6 cm, 1 lado de 12 cm y 1 lado de 16 cm</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="50">
+          <label font_size="18">Utilizando 3 piezas rectangulares de lados 6 centímetros y 8 centímetros,mis hijos, Pedro, María y José arman, cada uno con distinta forma, una figura más grande: Ahora me preguntan quién hizo la figura con mayor perímetro. ¿Tú puedes calcularlo?</label>
+        </row>
+        <row height="50">
+          <multiplechoice image="data/puzzles/images/puzzle_124_mc.png" number="3" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">0</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="125" points="7600">
+    <clues>
+      <a>Calcula cuántos litros de agua se evaporan en 30 días</a>
+      <b>En 30 días, se agrega agua 5 veces</b>
+      <c>En 30 días se evaporan 45 litros pero se agregan 25 litros</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Llené una piscina para niños con 2000 litros de agua. Se sabe que se evapora un litro y medio de agua por día, por lo cual le agrego 5 litros de agua cada 6 días. Cuántos litros de agua habrá en la piscina después de 30 días?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_125_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="126" points="55">
+    <clues>
+      <a>Puede haber gente con consolas que que no sean Cazaproblemas</a>
+      <b>Puede haber gente que use casco que no tenga consola</b>
+      <c>Puede haber gente que use casco que no sea Cazaproblemas</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Si te hago las siguientes afirmaciones. Todos los Cazaproblemas tienen una Consola. Todos los que tienen una Consola usan casco. ¿Cuál de las siguientes conclusiones se puede deducir a partir de ellas? </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_126_mc.png" number="4" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="127" points="57">
+    <clues>
+      <a>Si 24 Leones de Oro pesan lo mismo que 36 Halcones de Plata, 12 Leones de Oro pesan lo mismo que 18 Halcones de Plata.</a>
+      <b>Si 12 Leones de Oro pesan lo mismo que 18 Halcones de Plata, 6 Leones de Oro pesan lo mismo que 9 Halcones de Plata.</b>
+      <c>Si 6 Leones de Oro pesan lo mismo que 9 Halcones de Plata, 2 Leones de Oro pesan lo mismo que 3 Halcones de Plata.</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="14">Ésta balanza está en equilibrio con 24 Leones de Oro en uno de sus platos y 36 Halcones de Plata en el otro plato. Si te obligan a sacar Leones de Oro y Halcones de Plata de los platos, pero manteniendo a la balanza en equilibrio. ¿Cuál es la menor cantidad de Leones de Oro que puede sacar?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_127.png"/>
+          </column>
+        </row>
+        <row height="10" />
+        <row height="20">                
+          <label vcentered="false">La menor cantidad es          .</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="128" points="6300">
+    <clues>
+      <a>Al partir de X, Pedro tiene 2 opciones (calle 1 o calle C)</a>
+      <b>En las esquinas C2, C3, B1 y B3, Pedro tiene 2 opciones para continuar</b>
+      <c>En las esquinas C4, B2, B4,A1, A2 y A3, Pedro tiene una única opción</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="30">
+          <label font_size="14">Le hice este plano a mi amigo Cefrus. El viene de su casa, que marqué con una X, hasta mi casa que marqué con una Y. Cefrus vendrá solo desplazándose hacia la derecha o hacia arriba y la calle B está cortada entre la calle 2 y la calle 3. Se está demorando y quiero ir a buscarlo. ¿De cuantas formas distintas puede hacer Cefrus el recorrido? </label>
+        </row>
+        <row height="55">
+          <image image="data/puzzles/images/puzzle_128.png"/>
+        </row>
+        <row height="15">
+          <multiplechoice image="data/puzzles/images/puzzle_128_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="131"  points="7800">
+    <clues>
+      <a>El lado del cuadrado pequeño mide 2 cm</a>
+      <b>Los lados de cada rectángulo miden 2 cm y 5 cm</b>
+      <c>El lado del cuadrado grande es 5 cm </c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="16">¿Puedes ayudarme? Tenemos que repartir un campo entre varios familiares. Me han enviado un dibujo a escala con la división, pero no se si es correcta. El cuadrado de abajo corresponde a mi parte de campo. ¿Puedes decirme cuál es el perímetro de ese cuadrado?</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_131.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_131_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="133" points="19388">
+    <clues>
+      <a>Calcula cuánto cuesta contratar 6 botes</a>
+      <b>5 botes pueden llevar 30 niños</b>
+      <c>Si en el grupo hay más de 30 niños, contratar botes cuesta por lo menos 3600 Halcones de Plata</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Un entrenador quiere ir con sus estudiantes a la Isla Pegasus y tiene que elegir entre: botes que cobran 600 Halcones de Plata y llevan hasta 6 estudiantes o barcos que cobran 1550 Halcones de Plata y llevan hasta 48 niños. ¿Cuál es el menor número de niños que puede tener el grupo si la maestra decide que es más conveniente contratar el barco?</label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">El menor número es de          niños.</label>
+          <text y="197" skip="0" width="30" name="t1" x="70"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">31</value>
+      </answer>
+    </answers>
+  </exercise>  
+  <exercise id="134" points="57">
+    <clues>
+      <a>El menor múltiplo positivo de 7, terminado en 7, es el número 7</a>
+      <b>El mayor múltiplo de 7 menor que 900, terminado en 7, es 847 </b>
+      <c>Para pasar de un múltiplo de 7 terminado en 7 al siguiente debes sumar 70</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¿Cuántos números enteros positivos menores que 900 son múltiplos de 7 y terminan en 7?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_134_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="136" points="11000">
+    <clues>
+      <a>Para que el número de clientes sea el menor posible, la cantidad de clientes que elige la opción más cara debe ser la mayor posible</a>
+      <b>El mayor múltiplo de 70 menor que 1760 es 1750, pero el resto de la recaudación no es múltiplo de 50</b>
+      <c>El mayor múltiplo de 70 menor que 1760 que deja un resto de la recaudación múltiplo de 50 es 1610; en ese caso, 23 clientes optaron por lavado y secado y 3 clientes optaron por lavado  </c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">En mi peluquería ayer no pude contar los clientes. Tengo estos precios: Corte 50 Lobos de Bronce, Corte y Peinado 70 Lobos de Bronce. Ayer recaudé 1760 Lobos de Bronce. ¿Cuál fue el menor número posible de clientes que atendí? </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_136_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">0</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="138" points="56">
+    <clues>
+      <a>Para que el número sea múltiplo de 10, la última cifra debe ser 0</a>
+      <b>Las otras 2 cifras deben sumar 8; las posibilidades son 0 y 8, 1 y 7, 2 y 6, 3 y 5 o 4 y 4</b>
+      <c>Con 0 y 8 o 4 y 4 hay un número dorado; con 1 y 7, 2 y 6 o 3 y 5 hay 2 números dorados </c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Llamaremos números "dorados" a los números de 3 cifras, que son múltiplos de 10 y en los cuales la suma de las cifras es 8. ¿Cuántos números dorados hay?</label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">Hay          números dorados.</label>
+          <text y="197" skip="0" width="30" name="t1" x="70"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">8</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="139" points="3900">
+    <clues>
+      <a>Hay 8 piezas negras </a>
+      <b>Hay 12 piezas blancas</b>
+      <c>Calcula qué porcentaje es 8 de 20</c>
+    </clues>
+    <body>
+      <column width="100">
+		<row height="70">
+		  <column width="5"/>	
+          <column width="50">
+            <label font_size="14">Las piezas para este adorno de marmol tienen forma de un cuarto de círculo. Algunas piezas son negras y las otras son blancas. Tengo que hacer un diseño utilizando la figura a la derecha: ¿Qué porcentaje del total de las piezas del adorno son negras? Así pediré a la cantera que me envíen esa proporción.</label>
+          </column>
+          <column width="45">
+            <image image="data/puzzles/images/puzzle_139.png"/>
+          </column>
+        </row>        
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_139_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="140" points="57">
+    <clues>
+      <a>El más barato cuesta 10 Halcones de Plata; Compraste menos de 11 chocolates</a>
+      <b>El más caro cuesta 14 Halcones de Plata; compraste más de 7 chocolates</b>
+      <c>Hay un único número impar mayor que 7 y menor que 11</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">En una tienda en Logiverum venden chocolates a tres precios diferentes: 10, 12 y 14 Halcones de Plata. Si gastas 108 Halcones de Plata y compras un número impar de chocolates. ¿Cuántos chocolates compraste?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_140_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="141" points="10300">
+    <clues>
+      <a>La suma de dos números es par cuando ambos sumandos son pares o ambos sumandos son impares</a>
+      <b>En la primer rueda hay dos números pares y dos números impares; en la segunda rueda hay un número par y dos números impares</b>
+      <c>Se pueden obtener 2x1 sumas con dos sumandos pares y 2x2 sumas con dos sumandos impares</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>
+          <column width="60">
+            <label font_size="14">Para el próximo festival del verano quiero hacer un juego en el cual el participante hace girar las dos ruedas de la figura. Cada flecha señala un número y luego se suman esos dos números.&#13;
+Gana el participante cuando obtiene suma par, ¿cuántos son los resultados ganadores? Así sabré cuantos premios debo conseguir.</label>
+          </column>
+          <column width="35">
+            <image image="data/puzzles/images/puzzle_141.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_141_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="142" points="2600">
+    <clues>
+      <a>El total de números de 3 cifras es 900 </a>
+      <b>Hay 125 números de 3 cifras impares</b>
+      <c>Hay 100 números de 3 cifras pares</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">¿Un Cazaproblemas? Yo también era bueno en matemáticas de joven. ¿Sabes cuántos números de 3 cifras tienen, por lo menos, una cifra par y una cifra impar?</label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">Hay                     números.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">675</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="143" points="9100">
+    <clues>
+      <a>Si los grupos de sexto los designamos A, B, C, D y E, los partidos a disputar serán A-B, A-C, A-D, A-E, B-C, B-D, B-E, C-D, C-E, D-E</a>
+      <b>Si los colores de las telas los identificamos A, B, C, D y E, las combinaciones para las camisetas serán A-B, A-C, A-D, A-E, B-C, B-D, B-E, C-D, C-E, D-E</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">En la escuela tenemos cinco grupos cursando sexto año. Vamos a organizar un campeonato de manchado en el cual se van a enfrentar todos contra todos a una sola rueda. Para las camisetas de los equipos tenemos telas de cinco colores y las vamos a diseñar a franjas verticales de dos colores diferentes. Considerando M el número de partidos y N el número de camisetas, elige la opción correcta:</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_143_mc.png" number="3" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="144" points="56">
+    <clues>
+      <a>Tres años antes de febrero de 2011, fue febrero de 2008.</a>
+      <b>Cuatro meses antes de febrero, fue octubre del año anterior</b>
+      <c></c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Si plantaste un árbol tres años y cuatro meses antes de que se recogiera la primera cosecha de su fruto, la cual se obtuvo en el mes de febrero de 2011. ¿En qué mes y en qué año fue plantado el árbol?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_144_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="145" points="19095">
+    <clues>
+      <a>Calcula cuantas veces entra 2cm en 1m</a>
+      <b>De 1m2 de cartulina se obtienen 2500 cuadraditos de lado 2cm</b>
+      <c>La longitud de la fila será igual a 2500 x 2cm</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Una cartulina cuadrada de 1m de lado se corta en su totalidad en cuadraditos de lado 2cm. Si colocamos todos estos cuadraditos en una fila, uno tras otro pegados por un lado, ¿cuál será la longitud, en centímetros, de dicha fila?</label>
+        </row>
+		<row height="5"/>
+        <row height="25">
+          <label vcentered="false">La fila será de          cm.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">5000</value>
+      </answer>
+    </answers>
+  </exercise>   
+  <exercise id="146" points="19412">
+    <clues>
+      <a>Si consideras las partes de forma triangular en total entran 18 en el cuadrado</a>
+      <b>En la parte pintada entran 9 partes de forma triangular</b>
+      <c>9 es la mitad de 18</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="15">
+          <label font_size="14">¿Qué porcentaje del área del cuadrado está pintada?</label>
+        </row>
+        <row height="60">
+          <image image="data/puzzles/images/puzzle_146.png"/>
+        </row>
+        <row height="25">
+          <multiplechoice image="data/puzzles/images/puzzle_146_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>  
+  <exercise id="150" points="10100">
+    <clues>
+      <a>El total de cm de chocolate que tengo es 34; a cada lado deberán quedar 17 cm.</a>
+      <b>La suma de las distancias entre las barras y la pared es 13 cm; entre esas distancias y las longitudes de las barras que deben quedar del lado de la pared tengo 30 cm, lo cual equivale a 300 mm.</b>
+      <c>Al ser 4 barras, la distancia a la cual debo hacer el corte es 300:4</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="80">
+		  <column width="5"/>	
+          <column width="60">
+            <label font_size="14">Sobre la mesada de la cocina tengo estas 4 barras de chocolate del mismo ancho y ésas son sus respectivas longitudes. Como podés ver están ubicadas en forma perpendicular a la pared y a esa distancia.&#13;
+Utilizando un solo corte paralelo a la pared, como indica la línea marcada con la flecha, quiero dejar la misma cantidad de chocolate a cada lado del corte.&#13;
+¿A qué distancia, en milímetros, de la pared debo hacer el corte?</label>
+          </column>
+          <column width="35">
+            <image image="data/puzzles/images/puzzle_150.png"/>
+          </column>
+        </row>
+        <row height="20">
+          <multiplechoice image="data/puzzles/images/puzzle_150_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="151" points="56">
+    <clues>
+      <a>Interrumpieron la actividad 20 minutos para el descanso y 60 minutos para almorzar </a>
+      <b>En la Academia permanecieron 7 horas y 15 minutos </b>
+      <c>Calcula 435-80</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">En la Academia el timbre de entrada suena a las 7:45 de la mañana y el timbre de salida suena a las 3:00 de la tarde. En la mañana, los alumnos tienen un descanso de 20 minutos; al mediodía, los alumnos tienen 1 hora para almorzar. El resto de la jornada de ayer lo dedicaron a jugar con la consola. ¿Cuánto tiempo, en minutos, jugaron ayer con la consola? </label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_151_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="154" points="58">
+    <clues>
+      <a>Si hay 15 niñas y son más que los varones, el total de alumnos de la Torre es, como máximo, 29.</a>
+      <b>El número total de alumnos es un múltiplo de 4, aumentado 2 unidades.</b>
+      <c>El número total de alumnos es un múltiplo de 5, aumentado 1 unidad; al total de alumnos debes restarle el número de niñas.</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label>Si agrupamos los alumnos de esta Torre en grupos de 4, sobran 2. Si los agrupamos en grupos de 5, sobra 1. Hay 15 niñas y son más que los varones. ¿Cuántos son los alumnos varones de esta Torre?</label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">Los alumnos varones son          .</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">11</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="156"  points="5000">
+    <clues>
+      <a>Los números de las páginas que me quedaron a la vista son consecutivos</a>
+      <b>Las páginas que me quedaron a la vista tienen los números 158 y 159</b>
+      <c>La página es la siguiente a la 159</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Cuando abrí el libro de historia para estudiar me quedaron a la vista dos páginas. Recuerdo que la suma de los números de las dos páginas era 317. Ahora voy a estudiar de nuevo. ¿Cuál es el número de la página siguiente?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_156_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="157" points="58">
+    <clues>
+      <a>Los múltiplos de 2 tienen la última cifra par; debes descartar 45 de los 90 números de dos cifras que hay.</a>
+      <b>Los múltiplos de 5 tienen como última cifra el 0 (ya fueron descartados) o el 5; debes descartar 9 números de los 45 que quedaban.</b>
+      <c>Los múltiplos de 3 verifican que la suma de sus cifras es un múltiplo de 3; debes descartar 12 números de los 36 que quedaban. </c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="90" align="center">
+			<label>¿Cuántos números de dos cifras no son múltiplos ni de 2, ni de 3, ni de 5?</label>
+		  </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_157_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="158"  points="6900">
+    <clues>
+      <a>Si sale el 6 en los cuatro dados, se obtienen 24 puntos</a>
+      <b>Si sale el 6 en un solo dado, el número máximo que puedo obtener es 21</b>
+      <c>Si sale el 6 en solamente dos dados, resulta imposible sumar 23 </c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label>Hola, tiré 4 dados juntos, sumé los puntos y obtuve 23. ¿Puedes calcular en cuántos dados salió el 6?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_158_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="159" points="8600">
+    <clues>
+      <a>Luego de gastar el 10%, le quedó el 90%</a>
+      <b>El 10% del 90%, es un 9% de la cantidad inicial</b>
+      <c>Ahora tiene el 90% de lo que tenía ahorrado y el 9% que le devolvió su socio</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Ayer compré semillas para plantar y gasté el 10% del dinero que tenía ahorrado. Mi socio dice que me va a devolver el 10% del dinero que me quedó. ¿Me puedes decir que porcentaje del dinero inicial voy a tener cuando mi socio me pague?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_159_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="160" points="6900">
+    <clues>
+      <a>El total de números de 3 cifras diferentes es 648</a>
+      <b>Hay 60 números de 3 cifras diferentes impares</b>
+      <c>Hay 48 números de 3 cifras diferentes pares</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Veamos si eres rápido para hacer cálculos. ¿Cuántos números de 3 cifras diferentes tienen, por lo menos, una cifra par y una cifra impar?</label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">Por lo menos          números.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">540</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="162" points="19130">
+    <clues>
+      <a>Para que un número sea par, su última cifra debe ser par</a>
+      <b>Para que un número sea múltiplo de 5, su última cifra debe ser 0 o 5</b>
+      <c>Para que un número sea múltiplo de 3, la suma de sus cifras debe ser múltiplo de 3</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¿Cuál de los siguientes números es el mayor número par de 6 cifras que es múltiplo de 5 y también es múltiplo de 3?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_162_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="163" points="20327">
+    <clues>
+      <a>El menor número de tres cifras terminado en 6 es 106</a>
+      <b>El mayor número de tres cifras terminado en 6 es 996</b>
+      <c>En cada centena hay 10 números que terminan en 6</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">¿Cuántos números de tres cifras terminan en 6?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_163_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">0</value>
+      </answer>
+    </answers>
+  </exercise>
+    <exercise id="165" points="19386">
+    <clues>
+      <a>Si fueran 20 filas de 40 butacas, el número de butacas sería 800</a>
+      <b>La última fila tiene 59 butacas</b>
+      <c>0+1+2+3+……+17+18+19 = 190</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">En el Anfiteatro de Logiverum hay 20 filas con butacas numeradas. La primera fila tiene 40 butacas, la segunda fila tiene 41 butacas y, así sucesivamente, cada fila aumenta una butaca respecto de la anterior. ¿Cuál es el número total de butacas numeradas del anfiteatro?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_165_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">1</value>
+      </answer>
+    </answers>
+  </exercise>
+  <exercise id="166" points="19888">
+    <clues>
+      <a>Cuando se colocan 9 fichas rojas y 9 fichas azules se llega a 90 fichas</a>
+      <b>De las primeras 90 fichas, 45 son rojas y 45 son azules</b>
+      <c>Al agregar 10 fichas rojas se llega a 100 fichas</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Ubicamos en fila fichas rojas y azules de la siguiente manera: 1 roja y 1 azul, luego 2 rojas y 2 azules, luego 3 rojas y 3 azules, y así sucesivamente. ¿Cuántas de las primeras 100 fichas son rojas? </label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">De las primeras 100 fichas,          son rojas.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">55</value>
+      </answer>
+    </answers>
+  </exercise> 
+    <exercise id="167" points="19417">
+    <clues>
+      <a>Si perdió un partido, en ese partido le convirtieron el único gol que recibió</a>
+      <b>Si empató un partido, el resultado fue 0-0</b>
+      <c>En el partido que ganó convirtió los 3 goles</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">En los tres partidos que lleva jugados, el equipo del Entrenador Verdis  ganó uno, empató otro y perdió el restante; convirtió 3 goles y recibió solamente 1. ¿Cuál fue el resultado del partido que ganó?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_167_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">2</value>
+      </answer>
+    </answers>
+  </exercise>
+      <exercise id="168" points="19090">
+    <clues>
+      <a>Al doblar la hoja, las X de la primer columna tachan números de su misma fila en la última columna</a>
+      <b>Al doblar la hoja, las X de la segunda columna tachan números de su misma fila en la penúltima columna</b>
+      <c>Al doblar la hoja, las X de la tercer columna tachan números de su misma fila en la columna siguiente</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70"> 
+			<column width="50">
+				<label font_size="18">Si doblamos la hoja de papel cuadriculado a lo largo de la línea negra, ¿cuál de los números no quedará tachado por una X?</label>
+			</column>
+			<column width="50"> 
+				<image image="data/puzzles/images/puzzle_168.png"/>
+			</column>
+		</row>	
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_168_mc.png" number="6" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers> 
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise>
+    <exercise id="169" points="19591">
+    <clues>
+      <a>El número que obtuvo Aris es múltiplo de 2 y de 3</a>
+      <b>Aris obtuvo el 6, Balinus obtuvo el 3 y Colosus obtuvo el 2</b>
+      <c>Dintas obtuvo el 4 y Elón obtuvo el 1</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Aris, Balinus, Colosus, Dintas, Elón y Fenry tiraron un dado cada uno. Todos obtuvieron puntajes diferentes. El número que obtuvo Aris es el doble del que obtuvo Balinus y es el triple del que obtuvo Colosus; el número que obtuvo Dintas es el cuadrúplo del que obtuvo Elóns. ¿Qué número obtuvo Fenry?</label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">Fenry obtuvo el número          .</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">5</value>
+      </answer>
+    </answers>
+  </exercise> 
+      <exercise id="170" points="20111">
+    <clues>
+      <a>Entre 1 y 2011 hay 1006 números impares</a>
+      <b>Entre 1 y 2011 hay 670 múltiplos de 3</b>
+      <c>Entre los 670 múltiplos de 3, la mitad son pares y la mitad son impares</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="16">Dominicus escribió todos los números impares desde 1 a 2011 en su consola. Dante borró todos los números que había escrito Dominicus y que eran múltiplos de 3. ¿Cuántos números quedaron escritos en la consola?</label>
+        </row>
+        <row height="5" />
+        <row height="25">                
+          <label vcentered="false">Quedaron escritos          números.</label>
+          <text y="170" skip="0" width="30" name="t1" x="170"></text>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="t1">671</value>
+      </answer>
+    </answers>
+  </exercise> 
+   <exercise id="171"  points="19599">
+    <clues>
+      <a>Si uno de los sumandos tiene 3 cifras y el otro sumando tiene 2 cifras, la cifra P de las unidades de mil de la suma debe ser 1 </a>
+      <b>En la columna de las decenas solo te puedes llevar 1, por lo tanto M es 9 y Q es 0</b>
+      <c>Si en M+N te llevas 1, M+N=17</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+		  <column width="5"/>	
+          <column width="60">
+            <label font_size="15">Este papel tiene una cuenta para resolver pero hay números cambiados por letras. Letras diferentes representan dígitos diferentes. Encuentra el valor de R.</label>
+          </column>
+          <column width="35">
+            <image image="data/puzzles/images/puzzle_54.png"/>
+          </column>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_54_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">3</value>
+      </answer>
+    </answers>
+  </exercise> 
+    <exercise id="172"  points="19748">
+    <clues>
+      <a>El 0 es el único múltiplo de 10 que se forma con una sola cifra</a>
+      <b>Con cuatro cifras se pueden formar 6 múltiplos de 10 (ej. 3240)</b>
+      <c>Con tres cifras se pueden formar 6 múltiplos de 10 (ej. 420) y con dos cifras se pueden formar 3 múltiplos de 10 (ej. 30)</c>
+    </clues>
+    <body>
+      <column width="100">
+        <row height="70">
+          <label font_size="18">Con estas tarjetas tarjetas numeradas con los números 3, 0, 2 y 4 debes formar con ellas números que sean múltiplos de 10. Para cada número puedes usar la cantidad de tarjetas que quieras (una, dos, tres o las cuatro) y puedes utilizar cada tarjeta todas las veces que necesites en distintos números. ¿Cuántos números diferentes puedes formar?</label>
+        </row>
+        <row height="30">
+          <multiplechoice image="data/puzzles/images/puzzle_81_mc.png" number="5" name="mc1"/>
+        </row>
+      </column>
+    </body>
+    <answers>
+      <answer>
+        <value name="mc1">4</value>
+      </answer>
+    </answers>
+  </exercise>
+</exercises>

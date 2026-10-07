@@ -1,0 +1,447 @@
+## dialog_001.lua
+[Luceria] Bienvenido a la Academia, Aki. Soy la Tutora Luceria. Aquí tienes tu consola.
+[Aki] Quiero aprender para ser un gran Cazaproblemas como mi padre. ¿Cómo son las clases?
+[Luceria] Debes recorrer en orden las Torres donde se dan las clases de cada tipo de problema.
+Primero debes ir a la Torre Roja de las Figuras. Nos vemos luego. Si tienes dudas acude a mí.
+## dialog_002.lua
+[Lis] ¡Hola Aki! Qué alegría verte aquí. Ya creía que el Director nunca te dejaría entrar.
+[Aki] ¿Por qué el Director no me dejaba entrar a la Academia?
+[Lis] Él no quería que el hijo de Gladius fuera un Cazaproblemas. ¡No es justo, serás un gran Cazaproblemas!
+[Aki] Quimerius me envió una carta, mirá...
+[Lis] Mmm... ¡Qué bien! El Profesor Quimerius es muy bueno.
+Él tiene una oficina debajo de la Torre Azul pero te buscará cuando sepa que has llegado.
+Nos vemos, no descuides tus clases.
+## dialog_003.lua
+[E. Rojo] Saludos Aki, soy Petecus, el Entrenador de la Torre de las Figuras. O el Entrenador Rojo, como gustes. 
+Ésta es tu primera clase. Te explicaré cómo resolver problemas de múltiple opción. 
+[Aki] ¿Por qué te dicen Entrenador Rojo? 
+[E. Rojo] ¡Ahh! Pensé que nunca preguntarías. A cada tipo de problema se lo llama por un color. 
+A los problemas de Figuras les corresponde el Rojo. Ahora pasemos a los problemas de múltiple opción... 
+## dialog_004.lua
+[E. Rojo] Te has ganado estos cristales. Ya has aprobado esta Torre. Puedes volver cuando quieras.
+El Entrenador de la Torre Azul del Razonamiento te espera.
+## dialog_005.lua
+[E. Azul] Así que ya sabes de Figuras, ¿eh? Soy Severio, el Entrenador Azul. Te explicaré cómo usar las pistas correctamente. 
+Un buen Cazaproblemas debe saber usarlas. Cada una reduce un poco la cantidad de puntos que obtienes, pero te darán una idea útil para encontrar la solución. ¿Preparado?
+[Aki] Sí, pero...
+[E. Azul] Pero nada, espero que tomes lo que le sucedió a tu padre como una valiosa lección.
+## dialog_006.lua
+[E. Azul] Listo. Ahora debes ir a la Torre Amarilla de los Cálculos.
+## dialog_007.lua
+[E. Amarillo] ¿Quién? Ahh... un gusto conocerte Aki.
+Te explicaré cómo funciona el sistema de puntos y qué pasa si se usan las pistas y la respuesta es errónea.
+Sencillo, ¿verdad? Vamos a la clase.
+## dialog_008.lua
+Te dije que sería sencillo, Aki. Ahora que has aprobado puedes ir a la Torre Verde de los Cálculos.
+## dialog_009.lua
+[E. Verde] Bien, bien, así que el hijo de Gladius.Tu padre era excelente con las pruebas de la Torre Verde.
+Aunque eso no fue suficiente para poder bajar la luna, ¿verdad?
+Te enseñaré el uso de los Cuadros de Texto.
+[Aki] Suenan complicados...
+[E. Verde] Tu padre era uno de los pocos que comprendía la importancia de los problemas verdes.
+Veamos de lo que TÚ eres capaz...
+## dialog_010.lua
+[E. Verde] ¿Quién lo hubiera pensado? Quizás sí puedas ser un Cazaproblemas después de todo.
+Para graduarte debes conseguir 40 cristales e ir al Laboratorio por tu diploma.
+[Aki] ¿Dónde consigo ese diploma?
+[E. Verde] Debes ir con el Entrenador de Laboratorio, bajo la Torre Amarilla.
+Puedes conseguir los 40 cristales que necesitas resolviendo problemas en cualquiera de las Torres.
+Si no vas a resolver otro problema verde ahora, vete a molestar a otro Entrenador.
+[Aki] ¿Puedes decirme tu nombre?
+[E. Verde] ¡Qué impertinente! Bien, soy el Entrenador Verdis. Y no quiero bromas al respecto, ¿me has escuchado?
+## dialog_011.lua
+[Máximus] ¡AKI! Vení a la fuente si no querés más problemas.
+## dialog_012.lua
+[Máximus] No deberías estar aquí. Sos una vergüenza para la Academia.
+[Aki] ¿Quién sos vos? ¿Por qué decís eso?
+[Máximus] Soy Máximus, el hijo del Príncipe Cazador. No te cruces en mi camino o lo pasarás mal.
+Vos sos el hijo de Gladius, el que escondió la luna azul. Tu padre causó un gran mal a Terragrifus.
+[Aki] ¡Yo no soy mi padre! ¡Seré un gran Cazaproblemas! ¡¡YA LO VERÁS!!
+## dialog_013.lua
+[Quimerius] Tranquilos, alumnos. Máximus, ve a clases, por favor.
+## dialog_014.lua
+[Máximus] ¿Aún no has renunciado? El Director es amigo de mi padre y ninguno te quiere aquí. Nunca te vas a graduar. ¡Ja ja ja ja!
+## dialog_015.lua
+[Lis] No le hagas caso. Es un inútil.
+[Aki] Máximus no para de molestarme. El Director y él quieren que renuncie.
+[Lis] ¿No les vas a dar el gusto, verdad? Primero debes graduarte, Aki. Podés contar conmigo, ya lo sabés.
+[Aki] Gracias, Lis. Tenés razón, me voy a clases. Debo estudiar mucho.
+[Lis] ¡Así se habla! Nos vemos luego.
+## dialog_016_quimerius_tells_the_story.lua
+[Quimerius] Supe que venías a la oficina del Director. He hablado con los Entrenadores de las Torres y sé que ya terminaste todas las clases.
+[Aki] Sí, sí. Vos eras amigo de mi padre. ¿Por qué todos lo detestan tanto?
+[Quimerius] Fui su Entrenador... y claro, fuimos amigos luego de que se graduó hasta... hasta que desapareció.
+Como sabes, en Terragrifus hay dos lunas, Serëlia, blanca y grande y Syrëlia que es azul y pequeña.
+Todas nuestras máquinas funcionan con Vis, una sustancia azul muy rara aquí pero abundante en Syrëlia.
+A Gladius le encomendaron bajar la luna azul a la superficie del Terragrifus. El error de tu padre hizo que ya no se pueda acceder a esa Vis.
+[Aki] Nunca nadie me contó cual fué el error de mi padre. Quimerius, ¿vos sabés qué pasó?
+[Quimerius] Tu padre hizo construir una catapulta para así bajar la luna, pero equivocó sus cálculos.
+Cuando se disparó la catapulta la luna azul no cayó sino que quedó oculta detrás de Serëlia, la luna blanca.
+[Aki] Mmm... bueno. Gracias por la información. Trataré de convertirme en el mejor Cazaproblemas de la historia.
+[Quimerius] Me recuerdas a tu padre. Ahora ve a buscar a Luceria y dile que ya estás listo para graduarte.
+## dialog_017.lua
+[Lis] ¿Cómo vas con las clases? ¿Ya fuiste al Laboratorio?
+[Aki] Con las clases voy bien, pero eso aún no.
+[Lis] ¿Qué esperás? ¡Si ya tienes 40 cristales ve con el Entrenador de Laboratorio!
+Está bajo la Torre Azul ¡Date prisa!
+## dialog_018.lua
+[E. Laboratorio] ¿Mmm? ¿Gladius?¿Pero tú no te habías graduado ya?
+Pero... claro que no eres Gladius, ¿dónde tengo la cabeza? Pasa, pasa, joven.
+[Aki] Soy el hijo de Gladius, me llamo Aki. Quiero obtener mi diploma.
+[E. Laboratorio] Necesitas haber obtenido 40 cristales para recibirlo. Déjame ver...
+player
+coins
+[-40 cristales]
+[E. Laboratorio] Mmm... bien, tienes todo lo que precisas. Déjame buscar tu diploma.
+Mmm... ¡qué raro! El Director se debe de haber llevado el tuyo... y seguro que lo tiene en su oficina
+La oficina del Director es la que está bajo el puente del medio. Dile que vas de mi parte. Mucha suerte, Aki, hijo de Gladius.
+## dialog_019.lua
+Debes ir a la oficina del Director. Es la puerta siguiente a ésta hacia el Este.
+## dialog_020_dir_door_locked.lua
+[Puerta Cerrada] Un pequeño cartel colgado del pestillo dice: No estoy, vuelvo en unas horas...
+## dialog_021_lis_at_dirs_door.lua
+[Aki] ¡¡Lis, estoy furioso!! ¡El Director se llevó mi Diploma y seguro no me lo quiere dar!
+[Lis] ¿Cómo puede ser tan odioso? Habla con Jocosius, el limpiador.
+Jocosius siempre está al tanto de todo y tiene soluciones 'ingeniosas' para los problemas.
+Búscalo por todos lados, siempre está donde menos lo imaginas. ¡Ánimo, Aki!
+## dialog_022_jocosius.lua
+[Jocosius] No traes buena cara.
+¿No me dirás que siendo Gladius tu padre no te ha enseñado uno o dos trucos para resolver problemas, ¿eh?
+[Aki] Lis dijo que tú podrías ayudarme. El Director tiene mi Diploma de Laboratorio y así no me puedo graduar. ¿Puedes hacer algo?
+[Jocosius] Normalmente te cobraría algunos cristales por la ayuda, pero siendo el hijo de Gladius puedo hacer una excepción.
+Dejaré la puerta de la oficina del Director sin llave.
+Si vas en unos minutos me aseguraré de que no se encuentre y la puerta estará 'accidentalmente' abierta. Nos vemos, Aki.
+## dialog_023_jocosius_after_promise.lua
+[Jocosius] Termino aquí y me pongo a hacer lo tuyo.
+Ve a dar una vuelta y después pasa por la oficina del Director. Has rápido lo tuyo.
+## dialog_024_diploma.lua
+[Has encontrado tu Diploma]
+## dialog_025_chap1_ending.lua
+[Luceria]	Felicitaciones Aki. Te has graduado en tiempo récord. Veo que tienes el mismo talento que Gladius.
+Déjame ver el diploma...
+El diploma está en orden. Desde este momento eres un Cazaproblemas.
+## dialog_026_lab_trainer_closed_stairs.lua
+No puedes venir aquí aún. Tienes que ir a la Torre Roja primero.
+## dialog_027.lua
+[Quimerius] Aki, soy el Prof. Quimerius. Ve a clases tu también. Luego te buscaré y hablaremos.
+## dialog_028_lab_trainer_temp_ending.lua
+Terminaste el primer capítulo de Los Cazaproblemas: Torneo de Campeones, espero te haya gustado.
+Sigue entrenándote hasta que esté habilitado el registro al Torneo. ¡Estate atento!
+## dialog_029_jocosius_purchase.lua
+options
+[Jocosius] Mmm... ¿viniste por algún atuendo?
+No, me equivoqué.
+Sí, decime qué tenés.
+print
+test 01
+[Jocosius] El que tengo custa 1000 cristales, ¿lo quieres?
+No, gracias.
+Sí, ¡dale!
+test 02
+test 03
+Sacar coins y agregar el item
+Ya te lo activé en tu consola, puedes seleccionarlo desde el inventario.
+Puedes volver por él cuando quieras. Hasta la próxima.
+## dialog_120.lua
+Bien. Toma algunos cristales. Puedes volver en cualquier momento y te daré otro problema para que resuelvas.
+## dialog_121.lua
+No hay más clases para ti en esta torre. Lo has hecho bien. ¡Tienes todo para ser un buen Cazaproblemas!						
+## dialog_122.lua
+¿Estás preparado para tu siguiente desafío?	Aquí lo tienes...
+## dialog_123_goto_next_puzzle.lua
+Por ahora has terminado aquí. Continúa en la siguiente torre.
+## dialog_201_townfolk_welcome.lua
+math
+random
+print
+random1 = 
+Hola, Cazaproblemas. Llegas justo a tiempo.
+Saludos. Necesito de tu ayuda, Cazaproblemas.
+¡Qué alivio! ¡Un Cazaproblemas!
+Bienvenido, Cazaproblemas. Estoy en un dilema.
+Eres muy joven, ¿ya te has graduado? ¡Qué bien!
+¿Puedo contarte mi problema?
+¡Qué suerte! Necesitaba un Cazaproblemas
+¿Puedes darme una mano aquí, Cazaproblemas?
+Cuando era joven Gladius me ayudó mucho, me haces acordar a él. ¿Puedes ayudarme?
+Si solo pasara por aquí un Cazaproblemas...pero...¡Hola! ¡Qué suerte que pasaras!
+¡Necesito de tu asistencia aquí!
+¿Me ayudas, Cazaproblemas? No sé qué hacer...
+¿Tienes algo de tiempo, Cazaproblemas?
+¡Por aquí! Necesito de tu ayuda
+Acércate, Cazaproblemas. Veamos qué opinas de esto.
+¡Aquí! ¡Aquí! ¿Puedes ayudarme?
+No sé cómo resolver esto. ¿Tú serías tan amable?
+¡Por fin un Cazaproblemas!
+No logro dar con una solución. ¿Podrías darme tu opinión?
+Cazaproblemas, ¿Puedo contar contigo?
+## dialog_202_townfolk_correct.lua
+math
+random
+¡Qué bien! Lo has resuelto, Aki
+Muchas gracias, Cazaproblemas. 
+Pensar que me parecía tan difícil... eres muy buen Cazaproblemas.
+¡Bien hecho! Ahora puedo seguir adelante. Nos vemos, Aki.
+¡Vaya! Qué rápido lo has resuelto. 
+Eres más inteligente que los Duendes de Syrëlia, Aki. Te agradezco.
+Sin duda has aprendido mucho en la Academia. Te doy las gracias.
+Gracias por tu tiempo, Aki. Lo resolviste muy bien.
+Pasa por aquí cuando estés cerca. Haré una torta para agradecerte por ayudarme.
+Ya decía yo que te parecías a Gladius. Lo has hecho muy bien, Aki.
+¡Uff! Yo nunca lo hubiera resuelto. Buena suerte, Cazaproblemas.
+Lo haces parecer sencillo, Aki. Buen trabajo.
+Sin duda eres más hábil que ese tonto de Máximus que no pudo resolverlo.
+Si ves a un Cazaproblemas muy engreído que se llama Máximus, dile cómo lo resolviste así aprende a hacerlo.
+¡Sabía que podías hacerlo! El Cazaproblemas Máximus me dijo que era un problema sin solución.
+¿Listo? ¿Lo has resuelto? Muchas gracias, Cazaproblemas.
+Ahora entiendo por qué yo no podía resolverlo. Eres muy inteligente, Aki.
+Sin duda has estudiado mucho. Lo hiciste muy bien.
+¡Buen viaje! ¡Ayuda a muchos como lo has hecho conmigo!
+Nos vemos, Aki. Me has ayudado mucho.
+## dialog_203_townfolk_incorrect.lua
+math
+random
+No te preocupes. Este problema no lo resuelven ni los Duendes de Syrëlia.
+Gracias de todos modos, Cazaproblemas.
+Bueno, esperaré a que pase otro Cazaproblemas.
+Tendré que resolverlo de otra manera entonces. Adiós Cazaproblemas.
+Buen viaje, lamento que no pudieras resolverlo.
+Eres muy joven, pronto tendrás más experiencia y podrás resolver casos como éste.
+Has hecho lo posible, Cazaproblemas. No te preocupes.
+Ya veré cómo lo resuelvo. Buen viaje, Aki.
+Si te cruzas con otro Cazaproblemas, envíalo aquí a ver si él puede ayudarme.
+Está bien, ya se me ocurrirá una manera de solucionarlo.
+Parece que era más difícil de lo que pensaba, ¿eh?
+¡Vaya! Sí que era complicado. Igual te agradezco que te detuvieras a pensarlo.
+Mmm...  Quizás se lo presente al Sabio Quimerius, él puede resolver cualquier problema.
+Gracias por tu tiempo, Cazaproblemas. Cuando no se puede, no se puede...
+Nos vemos, Aki. Lamento que no encontraras la solución.
+Bueno, si Gladius le erró a la luna, tú también puedes fallar alguna vez ¿no?
+¡Arriba el ánimo! Eres muy joven aún Cazaproblemas. Aún tienes mucho que aprender.
+Qué problema tan complicado, ¿verdad?
+Quizás alguno de los Profesores de la Academia sí pueda resolverlo. Iré a visitarlos.
+Supongo que tendré que buscar otra solución. Gracias de todos modos, Aki.
+## dialog_204_townfolk_afterpuzzle.lua
+math
+random
+Has sido muy amable, Aki.
+Te debe haber ido muy bien en la Academia. Nos vemos.
+Qué suerte que pasabas por aquí.
+Mucha suerte, Cazaproblemas.
+Llegaste en el momento indicado. Buen viaje.
+Vuelve cuando quieras. Mis pasteles son muy ricos.
+Gracias, Aki. Pasa a visitarnos cuando estés por aquí.
+Muchas gracias por tu tiempo, Cazaproblemas.
+Me recuerdas al anterior Príncipe Cazador. Qué raro, ¿no?
+Eres muy hábil, serás un buen Cazaproblemas.
+Hasta la próxima, Aki.
+Lamento que partas tan pronto. Buena fortuna.
+Espero que nos volvamos a ver pronto.
+Adiós, Cazaproblemas. Muchas gracias.
+¿No quieres otro vaso de limonada? Cuídate en el camino.
+Acabo de hacer pasteles. Lleva uno para el camino.
+Qué lástima que ahora ya no se ve la luna azul... era muy linda.
+Qué lindos cascos que usan ustedes los Cazaproblemas.
+Un día llegarás a ser Príncipe Cazaproblemas, te lo aseguro, Aki.
+Espero que mi hermano sea aceptado en la Academia y se gradúe de Cazaproblemas como tú.
+Mi hermana es muy buena con las matemáticas. Cuando sea mayor quizás quiera ser Cazaproblemas como tú.
+¿Has estado alguna vez en la Isla Pegassus? Dicen que es hermosa.
+¿Es cierto que hay grutas enormes debajo de Terragrifus donde vive gente?
+## dialog_205_student_chats.lua
+math
+random
+[Alumno] ¡Hola! ¿Cómo estás?
+[Alumno] Qué bueno ver caras nuevas.
+[Alumno] ¿Hace mucho que quieres ser un Cazaproblemas? ¡Yo desde hace 632 días!
+[Alumno] Mucha suerte, niño Cazaproblemas.
+[Alumno] Hay rumores de que eres más crea problemas que Cazaproblemas...
+[Alumno] Aki, ¿verdad? ¿Tu nombre es el mismo que el de una planta?
+[Alumno] ¿Es cierto que hay grutas enormes debajo de Terragrifus donde vive gente?
+[Alumno] Tu padre era famoso, ¿verdad?
+## dialog_206_luceria_goodbye.lua
+[Luceria] Aki, tu padre estuvo aquí hace mucho tiempo, comenzando su carrera de Cazaproblemas, igual que tú lo estás ahora.
+Todos comenzamos algún día y yo estoy segura que lo harás muy bien.
+[Aki]	A mi padre no le fue tan bien.
+[Luceria] Escucha Aki, tu padre fue el Príncipe Cazador.
+El título de Sabio de Quimerius y el de tu padre son los más importantes de todo Terragrifus.
+Logras ser Príncipe Cazador luego de ayudar a mucha, mucha gente. Gladius fue un gran hombre, Aki.
+Lamentablemente su error con la luna fue tan grande que ni los esfuerzos de Quimerius por evitar el exilio fueron suficientes.
+Ahora es tu turno, Aki. Puedes comenzar en la ciudad cercana, Logiverum. Te hemos asignado varios problemas allí que debes resolver.
+Recuerda que para recibirte de Cazaproblemas tienes que terminar todos los problemas asignados.
+[Aki] Gracias, Luceria. Volveré pronto y seré un gran Cazaproblemas como mi padre.
+[Luceria] Cuando salgas de la Academia podrás recorrer las ciudades y pueblos ayudando a la gente que precisa de un Cazaproblemas.
+Acabo de activar el mapa en tu consola. Te indicará dónde te encuentras y qué problemas hay para resolver.
+Puedes acceder a él presionando la tecla C en tu teclado. 
+## dialog_207_lis_goodbye.lua
+[Lis] Buena suerte, Aki. Espero que resolvamos muchos problemas y nos graduemos pronto. Nos vemos.
+## dialog_208_maximus_goodbye.lua
+[Maximus] ¡Apártate de mi camino! Tú nunca te convertirás en un Cazaproblemas.
+## dialog_209_quimerius_goodbye.lua
+[Tu consola comienza a vibrar]
+[A través de la Consola: Quimerius] Aki, he sincronizado nuestras consolas.
+Podré ayudarte a distancia desde la Academia si me necesitas, así que tranquilo y aplica todo lo que has aprendido.
+Ya tienes todo lo necesario para comenzar tu carrera de Cazaproblemas.
+Es momento ahora de empezar a juntar puntos para el torneo.
+Recuerda que ahora puedes acceder a tu consola presionando la tecla C en tu teclado.
+reset_score
+El director estuvo de acuerdo en darte algunos puntos extra por la velocidad con que has terminado las pruebas.
+Hemos actualizado tu consola. Ahora tienes 10.000 puntos. 
+¡Suerte en la competencia!
+## dialog_210_quimerius_last_success.lua
+[Consola: Quimerius] ¡Muy bien! Veo que ya no precisas ayuda. Estaré en contacto.
+## dialog_211_quimerius_failure.lua
+math
+random
+[Consola: Quimerius] Creo que te has puesto un poco nervioso. No te preocupes, el próximo saldrá bien. No te desanimes, Aki.
+[Consola: Quimerius] No te desanimes. Estar solo lo hace todo más complicado.
+[Consola: Quimerius] Aprender tiene mucho de ensayo y error, Aki. Sigue probando.
+[Consola: Quimerius] Eres muy jóven para ser un Cazaproblemas. La gente sabe eso, sigue adelante.
+[Consola: Quimerius] Difícil, ¿no? Muchas veces los problemas en Terragrifus lo son.
+[Consola: Quimerius] Tu padre era un gran Cazaproblemas y nunca tuvo miedo a fallar.
+[Consola: Quimerius] La limonada que te ofrecen no siempre es buena. Confía en mí.
+[Consola: Quimerius] ¡Levanta esa cabeza! Todos erramos al principio.
+## dialog_212_quimerius_puzzles_in_other_maps.lua
+[Consola: Quimerius] Quería avisarte que no sólo en la ciudad de Logiverum hay problemas para resolver.
+Mira tu mapa para encontrar otros lugares a los que puedes acceder.
+## dialog_213_farsantius.lua
+[Farsantius] ¡Cazaproblemas! Por aquí, mira qué hermosas miniaturas del 'Fracaso de Gladius'. 
+Hasta lanzan guijarros. Alguien como tú sin duda debe tener una de estas fantásticas catapultas en miniatura.
+[Aki] Pero... ¿Jocosius? ¿Qué hacés aquí?
+[Farsantius] No soy Jocosius, soy Farsantius, primo de Jocosius.
+[Aki] Vaya. Es que son iguales.
+[Farsantius] ¡De ninguna manera! ¿Acaso no tienes ojos? Jocosius usa gorro anaranjado, el mío es rojo.
+Pero el tiempo vale Leones de Oro, y tú me estás haciendo perder el mío. ¿Vas a comprar una miniatura del “Fracaso de Gladius”?
+[Aki] ¿Qué fue lo que salió mal con la catapulta? ¿Lo sabés?
+[Farsantius] Claro, Gladius no calculó la calibración de la elipse.
+El proyectil al no alcanzar la velocidad óptima de desplazamiento triangular...
+[Aki] Me parece que no tenés ni idea de por qué falló la catapulta.
+[Farsantius] Este... uhh... yo... Mira, aquí tienes una pieza... de regalo.
+player
+add_item
+item_miniature
+[Has adquirido miniatura]
+Vete que me haces perder el tiempo. Si quieres habla entonces con la Dama Cazadora Aurelia.
+Ella te explicará en qué se equivocó Gladius de una manera que puedas entender.
+## dialog_214_aurelia.lua
+[Aki] ¿Vos sos la Dama Cazadora Aurelia? Farsantius dijo que me podés explicar lo que falló con la catapulta.
+[Aurelia] Lo que en realidad quieres saber es en qué se equivocó tu padre, ¿verdad?
+[Aki] ¡Eso es! Pero... ¿cómo sabés que Gladius es mi padre?
+[Aurelia] Tu padre y yo fuimos... buenos amigos. Te entiendo Aki.
+Ésta no es la historia que cuento normalmente, pero tú te mereces saber la verdad.
+Tu padre era parte de una Orden secreta. La Orden puso en sus manos una gran responsabilidad...
+[Aki] No entiendo lo que me decís.
+[Aurelia] Prometí no hablar al respecto. Yo también pertenezco a esa Hermandad secreta.
+Pero sí puedo decirte que si vas a la Torre de Armandius, el constructor de la catapulta, vas a enterarte de la verdad.
+[Aki] ¿La Torre de Armandius?
+[Aurelia] La encontrarás en el bosque, tiene el techo rojo.
+Lamento no poder decir más, ya he ido demasiado lejos con lo que dije. Me recuerdas mucho a tu padre, cuídate Aki.
+[Aki] Te agradezco, Dama Aurelia. 
+## dialog_215_armandius.lua
+[Aki] ¿Qué es esto? ¿Qué significa? ¡El plan era esconder la luna desde el principio! Mi padre no se equivocó.
+[Armandius] ¿Qué haces aquí? No se suponía que vieras eso. El Sabio Quimerius dijo que...
+[Aki] ¿Quimerius? Espera... El plano tiene la firma de Quimerius.
+Entonces él siempre supo que mi padre no se había equivocado. Quimerius es parte de esa Orden secreta, ¿no?
+[Armandius] Sí, no, digo... el diseño fue aprobado por Quimerius.
+Mira, yo solo seguí las instrucciones de la Orden. Tú no deberías estar aquí.
+[Aki] No puede ser...
+## dialog_216_quimerius_after_armandius.lua
+[Consola: Quimerius] ¿Qué estás haciendo en la Torre de Armandius?
+[Aki]	Aurelia me dijo que aquí encontraría la verdad sobre mi padre.
+[Consola: Quimerius] ¿Aurelia? ¿Qué verdad? Ya sabes la historia de tu padre.
+[Aki]	Vos me dijiste que mi padre se había equivocado. ¿Por qué no me dijiste que vos también tuviste que ver con la catapulta?
+[Consola: Quimerius] No sé de qué estás hablando.
+[Aki]	Tu firma está en el plano de la catapulta. La idea fue esconder la luna desde el principio.
+¡No hubo ningún error! ¡TÚ LO SABÍAS! Quiero saber la verdad y quiero saber dónde está mi padre.
+[Consola: Quimerius] No es momento de hablar sobre eso. Tú debes convertirte en Cazaproblemas. Así se lo prometí a tu padre.
+[Aki]	¡No más mentiras! Volveré a la Academia y me dirás la verdad.
+[Consola: Quimerius] Solo puedes venir a la Academina cuando hayas terminado con todos los problemas (¡Click!)
+## dialog_217_quimerius_aurelia.lua
+[Quimerius] Soy el Líder de la Orden, Aurelia. No respetaste mis instrucciones y ahora Aki sabe la verdad.
+[Aurelia] Aki tenía derecho a saberlo, Quimerius. Hice lo que tenía que hacer.
+[Quimerius] Ahora debo tomar medidas drásticas. Esto no se puede saber, hay mucho en juego.
+Me encargaré de Gladius primero.
+[Aurelia] Aki debería saber que su padre ha estado aquí, bajo la fuente.
+[Quimerius] ¡NO! Y no se te ocurra decírselo tú, ya has causado bastantes problemas.
+## dialog_218_quimerius_first_success.lua
+[Consola: Quimerius] ¡Bravo! Lo has resuelto muy bien. ¿Qué tal si buscas otra persona a la cual ayudar?
+## dialog_219_blueprint.lua
+[Has encontrado un plano]
+## dialog_220_armandius_after.lua
+[Armandius] Mejor vete, no quiero tener más problemas. Si quieres saber más pregúntale a Quimerius.
+## dialog_221_aki_grrr.lua
+[Aki] ¡QUIMERIUS...ME MENTISTE! ¡Mi padre fue exiliado por tu culpa!
+## dialog_222_quimerius_dont_get_down_there.lua
+[Quimerius] ¡Detente! Aki, si bajas ahí no regresarás a la Academia jamás.
+## dialog_223_aki_quimerius_ending.lua
+[Aki]	¡MI PADRE ESTÁ ACÁ Y NUNCA ME LO DIJISTE!
+Todos sabrán que mi padre no se equivocó y que vos sos responsable de todo.
+## dialog_224_aurelia_post_dialog.lua
+[Aurelia] No te olvides que en el taller de Armandius resolverás tu enigma.
+## dialog_225_aurelia_you_shall_not_pass_dialog.lua
+[Aurelia] Aún no sabes toda la verdad. Vé al taller de Armandius y lo descubrirás.
+Busca la casa de techo rojo en el bosque.
+## dialog_250_luceria_response.lua
+math
+random
+[Luceria] ¿Todavía no partiste? Debes ir a Logiverum.
+[Luceria] Puedes ver el mapa de esta zona de Terragrifus apretando la 'Z'
+[Luceria] Tu consola tiene muchas funiones, tienes un mapa, una lista de las cosas que tienes y un diario
+[Luceria] Debes comenzar por Logiverum.
+[Luceria] El mapa dentro de tu consola te muestra los problemas que te van siendo asignados.
+[Luceria] A medida que vayas resolviendo problemas iremos asignándote más. Los podrás ver en el mapa de tu consola.
+[Luceria] Hay mucha gente que confía en los Cazaproblemas y acuden a nosotros cuando no pueden resolver algo.
+[Luceria] Tu padre era famoso, no dejes que eso te afecte.
+## dialog_251_you_shall_not_pass.lua
+[Pobladores] Tenemos órdenes de la Academia de no dejarte pasar. Lo sentimos.
+## dialog_900_closed_door.lua
+[Puerta cerrada]
+## dialog_901_closed_door_lab.lua
+[Puerta cerrada] Un letrero dice: Solo los alumnos que tengan al menos 40 cristales podrán pasar a obtener su diploma.
+## dialog_902_farsantius_purchase.lua
+items_for_sale
+cold
+brad
+shadow
+ipairs
+player
+has_item
+current_sale_item
+current_item_cost
+[Farsantius] No me quedan más atuendos para vender. Debería obtener algun otro por ahí...
+options
+[Farsantius] Mmm... ¿viniste por algún atuendo?
+No, me equivoqué.
+Sí, decime qué tenés.
+[Farsantius] El que tengo cuesta 
+ cristales y me gusta llamarlo 
+, ¿lo quieres?
+No, gracias.
+Sí, ¡dale!
+coins
+add_item
+Buena compra. Ya te lo activé en tu consola, puedes seleccionarlo desde el inventario.
+Mmm... no tienes cristales suficientes. Vuelve cuando tengas al menos 
+.
+Puedes volver por él cuando quieras. ¡Hasta la próxima!
+Puedes volver por él cuando quieras. Hasta la próxima.
+## dialog_dungeon_001_door_locked.lua
+[Puerta deshabilitada]
+## dialog_dungeon_002_npc_006_red.lua
+[Entrenador] Bienvenido al Torneo de Campeones, Aki.
+Al final del pasillo hay una puerta, al pasar por ella comenzarás el Torneo de Campeones.
+El Torneo de Campeones consiste en solucionar 10 problemas. Gana el que obtenga mayor puntaje.
+Para lograrlo pasarás por 10 habitaciones, cada una con una fuente en el medio
+Cada fuente tiene un problema. Para poder resolverlo tienes que activar la fuente con la tecla [A]
+Cada habitación tiene 3 puertas. Una vez hayas respondido el problema, podrás continuar por ellas.
+¡Pero ten cuidado! Solo una de ellas te llevará a la siguiente habitación.
+En cambio las otras dos te harán volver a la misma habitación.
+options
+¿Quieres escuchar esto de nuevo?
+No hace falta. Ya estoy listo.
+Sí, por favor.
+¡Excelente! Que tengas mucha suerte.
+## dialog_dungeon_003_npc001_luceria_dungeon_door.lua
+Bienvenido al Torneo de Campeones, Aki.
+Del otro lado de esa puerta habrá un Entrenador esperándote que te dará instrucciones.
+Una vez comiences a competir no podrás salir hasta que hayas terminado.
+Veamos si eres tan bueno como tu padre... Mucha suerte, te estaré esperando cuando salgas.

@@ -1,0 +1,216 @@
+java version "26.0.1" 2026-04-21
+Java(TM) SE Runtime Environment (build 26.0.1+8-34)
+Java HotSpot(TM) 64-Bit Server VM (build 26.0.1+8-34, mixed mode)
+INFO  Using log config file: jar:file:/E:/Transfer/Descargas/ghidra_12.1.2_PUBLIC_20260605/ghidra_12.1.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (3003 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @b9b00e0 (file:/E:/Transfer/Descargas/ghidra_12.1.2_PUBLIC_20260605/ghidra_12.1.2_PUBLIC/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (12552 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/E:/Transfer/Descargas/ghidra_12.1.2_PUBLIC_20260605/ghidra_12.1.2_PUBLIC/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    E:\Vicemi\Proyectos\CazaPira\research\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\Base\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Processors\8051\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: E:\Vicemi\Proyectos\CazaPira\research\ghidra_proj2\caza (HeadlessAnalyzer)  
+INFO  Creating project: E:\Vicemi\Proyectos\CazaPira\research\ghidra_proj2\caza (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: E:\Vicemi\Proyectos\CazaPira\research\ghidra_proj2\caza (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///F:/Games/Cazaproblemas/Cazaproblemas.exe (HeadlessAnalyzer)  
+INFO  Using Loader: Portable Executable (PE) (ProgramLoader)  
+INFO  Using Language/Compiler: x86:LE:32:default:windows (ProgramLoader)  
+INFO  Using Library Search Path: [., C:\Windows\SysWOW64, C:\Program Files\Java\jdk-26.0.1\bin, C:\Windows\Sun\Java\bin, C:\Windows\system32, C:\Windows, C, C:\Program Files\Git\Users\Vicemi\.claude\plugins\cache\universal-modder\universal-modder\0.2.0\bin, C:\Users\Vicemi\bin, C:\Program Files\Git\mingw64\bin, C:\Program Files\Git\usr\local\bin, C:\Program Files\Git\usr\bin, C:\Program Files\ImageMagick-7.1.2-Q16-HDRI, C:\Program Files\Microsoft SDKs\Azure\CLI2\wbin, C:\Program Files\OpenSSH, C:\Program Files\Common Files\Oracle\Java\javapath, C:\Program Files (x86)\Common Files\Oracle\Java\java8path, C:\Program Files (x86)\Common Files\Oracle\Java\javapath, C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0, C:\Windows\System32\OpenSSH, C:\Program Files\PuTTY, C:\Program Files\Tailscale, C:\Program Files\Calibre2, C:\Program Files (x86)\PDFtk\bin, C:\xampp\php, C:\ProgramData\ComposerSetup\bin, C:\Program Files\Git\cmd, C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn, C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn, C:\Program Files\Microsoft SQL Server\160\Tools\Binn, C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn, C:\Program Files\Microsoft SQL Server\160\DTS\Binn, C:\Program Files\Microsoft SQL Server\150\Tools\Binn, C:\Program Files\dotnet, C:\Program Files\PostgreSQL\17\bin, C:\Users\Vicemi\AppData\Roaming\npm, C:\Users\Vicemi\.bun\bin, C:\Program Files (x86)\cloudflared, C:\Program Files\PowerShell\7-preview\preview, C:\adb, C:\simg2img_win-master, E:\Vicemi\Apps\SDK\flutter\bin, E:\Vicemi\Apps\SDK\cmdline-tools\latest\bin, C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit, C:\Users\Vicemi\AppData\Roaming\Python\Scripts, C:\Program Files\Go\bin, C:\Program Files (x86)\QuickTime\QTSystem, C:\Maven\apache-maven-3.9.6\bin, C:\Program Files (x86)\Bitvise SSH Client, C:\Program Files\usbipd-win, C:\Program Files\PowerShell\7, C:\Users\Vicemi\AppData\Local\Author Software\nvm, C:\Users\Vicemi\AppData\Local\Author Software\nvm\.nodejs, C:\Users\Vicemi\.cargo\bin, C:\Users\Vicemi\.local\bin, C:\Users\Vicemi\AppData\Local\Programs\Python\Python312\Scripts, C:\Users\Vicemi\AppData\Local\Programs\Python\Python312, C:\Users\Vicemi\AppData\Local\Microsoft\WindowsApps, C:\Users\Vicemi\AppData\Local\spicetify, C:\ffmpeg\bin, C:\Users\Vicemi\AppData\Roaming\Composer\vendor\bin, C:\Users\Vicemi\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe, C:\Users\Vicemi\.dotnet\tools, C:\Users\Vicemi\AppData\Local\Programs\Microsoft VS Code\bin, C:\Users\Vicemi\go\bin, C:\Users\Vicemi\AppData\Local\Microsoft\WinGet\Packages\Genymobile.scrcpy_Microsoft.Winget.Source_8wekyb3d8bbwe\scrcpy-win64-v3.3.3, C:\Users\Vicemi\AppData\Local\Programs\Ollama, C:\Users\Vicemi\.lmstudio\bin, C:\Users\Vicemi\AppData\Local\Microsoft\WinGet\Links, C:\Program Files\WinHTTrack, C:\Program Files\nodejs, C:\Program Files\Git\usr\bin\vendor_perl, C:\Program Files\Git\usr\bin\core_perl, C:\Users\Vicemi\.claude\plugins\cache\universal-modder\universal-modder\0.2.0\bin] (ProgramLoader)  
+INFO  TLS callbacks at 68f004 (TLSDirectory)  
+INFO  TLS callbacks at 6b294004 (TLSDirectory)  
+INFO  TLS callbacks at 6e95e004 (TLSDirectory)  
+INFO  TLS callbacks at 6874c004 (TLSDirectory)  
+INFO  TLS callbacks at 6fd15004 (TLSDirectory)  
+INFO  TLS callbacks at 10101fe8 (TLSDirectory)  
+INFO  Additional info:
+Loading file:///F:/Games/Cazaproblemas/Cazaproblemas.exe?MD5=e225619ed44f66ea8ea7f87803d0877f...
+------------------------------------------------
+
+Searching 68 paths for library KERNEL32.DLL...
+Loading file:///C:/Windows/SysWOW64/kernel32.dll?MD5=4b53ae50aa096d91f25912725f39f706...
+Using existing exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\kernel32.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library LIBCURL.DLL...
+Loading file:///F:/Games/Cazaproblemas/libcurl.dll?MD5=42f86b8c74ec596f28a233d1cf2129ba...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\libcurl.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library LIBGCC_S_DW2-1.DLL...
+Loading file:///F:/Games/Cazaproblemas/libgcc_s_dw2-1.dll?MD5=c81c2063954800835adc179294cea84f...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\libgcc_s_dw2-1.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library LIBSDL_TTF.DLL...
+Loading file:///F:/Games/Cazaproblemas/libSDL_ttf.dll?MD5=86e84914698402cc4249e76d157dcd93...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\libsdl_ttf.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library LIBSTDC++-6.DLL...
+Loading file:///F:/Games/Cazaproblemas/libstdc++-6.dll?MD5=d575f00fbf32f16de1e082e5966f5abc...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\libstdc++-6.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library LIBVORBISFILE.DLL...
+Loading file:///F:/Games/Cazaproblemas/libvorbisfile.dll?MD5=8eccd0428d60f4128252f224dc508c13...
+[libvorbisfile.dll]: failed to create IMAGE_BASE_RELOCATION at 1001b000: Conflicting data exists at address 1001a058 to 1001b000
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\libvorbisfile.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library MSVCRT.DLL...
+Loading file:///C:/Windows/SysWOW64/msvcrt.dll?MD5=cc4814fcb125666ca06a88fe0bc1c628...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\msvcrt.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library SDL.DLL...
+Loading file:///F:/Games/Cazaproblemas/SDL.dll?MD5=fd7e7a20a9cb5cca5dbb81ea3d207de1...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library SDL_GFX.DLL...
+Loading file:///F:/Games/Cazaproblemas/SDL_gfx.dll?MD5=2ee4d288fb0ec5d1c002d772f08fa76f...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl_gfx.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library SDL_IMAGE.DLL...
+Loading file:///F:/Games/Cazaproblemas/SDL_image.dll?MD5=4cde00d410cd106ac5f9ed4137a27ffc...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl_image.exports
+Library not saved to project.
+------------------------------------------------
+
+Searching 68 paths for library SDL_MIXER.DLL...
+Loading file:///F:/Games/Cazaproblemas/SDL_mixer.dll?MD5=e09e4794abd018521bb13b636feb16ca...
+Created exports file: C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl_mixer.exports
+Library not saved to project.
+------------------------------------------------
+
+Applying cached symbols from LIBSDL_TTF.DLL
+Applying C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\kernel32.exports
+Applying cached symbols from MSVCRT.DLL
+Applying cached symbols from LIBGCC_S_DW2-1.DLL
+Applying cached symbols from LIBSTDC++-6.DLL
+Applying C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\libcurl.exports
+Applying C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\libvorbisfile.exports
+Applying C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl.exports
+Applying C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl_gfx.exports
+Applying C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl_image.exports
+Applying C:\Users\Vicemi\AppData\Roaming\ghidra\ghidra_12.1.2_PUBLIC\symbols\win32\sdl_mixer.exports
+Linking the External Programs of 'Cazaproblemas.exe' to imported libraries...
+  [LIBSDL_TTF.DLL] -> not found in project
+  [KERNEL32.DLL] -> not found in project
+  [MSVCRT.DLL] -> not found in project
+  [LIBGCC_S_DW2-1.DLL] -> not found in project
+  [LIBSTDC++-6.DLL] -> not found in project
+  [LIBCURL.DLL] -> not found in project
+  [LIBVORBISFILE.DLL] -> not found in project
+  [SDL.DLL] -> not found in project
+  [SDL_GFX.DLL] -> not found in project
+  [SDL_IMAGE.DLL] -> not found in project
+  [SDL_MIXER.DLL] -> not found in project
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///F:/Games/Cazaproblemas/Cazaproblemas.exe (HeadlessAnalyzer)  
+ERROR MinGW pseudo-relocation list not found (MingwRelocationAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___raise_securityfailure' specified in file: E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___report_rangecheckfailure' specified in file: E:\Transfer\Descargas\ghidra_12.1.2_PUBLIC_20260605\ghidra_12.1.2_PUBLIC\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+INFO  Skipping PDB processing: missing PDB information in program metadata (PdbUniversalAnalyzer)  
+INFO  hit non-returning function, restarting decompiler switch analyzer later (DecompilerSwitchAnalyzer)  
+INFO  hit non-returning function, restarting decompiler switch analyzer later (DecompilerSwitchAnalyzer)  
+INFO  Packed database cache: C:\Users\Vicemi\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: windows_vs12_32 (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.926 secs
+    Apply Data Archives                        1.817 secs
+    Call Convention ID                         0.012 secs
+    Call-Fixup Installer                       3.609 secs
+    Create Address Tables                      0.636 secs
+    Create Address Tables - One Time           1.243 secs
+    Create Function                           11.466 secs
+    Data Reference                             0.782 secs
+    Decompiler Switch Analysis                23.430 secs
+    Decompiler Switch Analysis - One Time     44.348 secs
+    Demangler GNU                            168.031 secs
+    Demangler Microsoft                        1.307 secs
+    Disassemble                               10.662 secs
+    Disassemble Entry Points                  11.365 secs
+    Disassemble Entry Points - One Time        1.298 secs
+    Embedded Media                             0.033 secs
+    External Entry References                  0.000 secs
+    Function ID                               14.765 secs
+    Function Start Pre Search                  0.097 secs
+    Function Start Search                      0.684 secs
+    Function Start Search After Code           0.395 secs
+    Function Start Search After Data           0.434 secs
+    MinGW Relocations                          0.003 secs
+    Non-Returning Functions - Discovered       4.999 secs
+    Non-Returning Functions - Known            0.219 secs
+    PDB Universal                              0.011 secs
+    Reference                                  1.818 secs
+    Scalar Operand References                  4.783 secs
+    Shared Return Calls                       52.178 secs
+    Stack                                     42.139 secs
+    Subroutine References                      1.479 secs
+    Subroutine References - One Time           0.006 secs
+    WindowsResourceReference                   2.146 secs
+    X86 Function Callee Purge                 50.769 secs
+    x86 Constant Reference Analyzer           39.199 secs
+-----------------------------------------------------
+     Total Time   497 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///F:/Games/Cazaproblemas/Cazaproblemas.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DecompileApp.java 'caza.c'  (HeadlessAnalyzer)  
+INFO  SCRIPT: E:\Vicemi\Proyectos\CazaPira\research\ghidra_scripts\DecompileApp.java (HeadlessAnalyzer)  
+INFO  DecompileApp.java> functions: 19210 (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: file:///F:/Games/Cazaproblemas/Cazaproblemas.exe (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///F:/Games/Cazaproblemas/Cazaproblemas.exe (HeadlessAnalyzer)  
+INFO  /Cazaproblemas.exe: file created (Vicemi) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /Cazaproblemas.exe (caza:/Cazaproblemas.exe) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

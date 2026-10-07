@@ -80,6 +80,14 @@ python tools/build_pira.py "<Piracalculos>/Piracalculos.activity/assets"
 python tools/build_pixfont.py
 ```
 
+La carpeta `research/` guarda todo el trabajo de investigación: el banco de problemas descifrado (`puzzles.xml`), los scripts Lua en pseudocódigo (`scripts_pseudo.txt`), los diálogos, las descompilaciones (`caza.c`, `piracalculos.c`), los proyectos de Ghidra y las capturas de prueba.
+
+### Publicación continua (Cloudflare Pages)
+
+* Comando de build: `npm run build`
+* Carpeta de salida: `dist`
+* Versión de Node: 22 (archivo `.node-version`)
+
 El motor de Cazaproblemas está reimplementado y ejecuta los scripts Lua originales con una máquina virtual de Lua 5.1 propia (`src/game/caza/lua51.ts`). Los niveles de Piracálculos se reescribieron sobre sus gráficos y sonidos.
 
 ## Créditos
