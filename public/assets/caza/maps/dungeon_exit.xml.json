@@ -1,0 +1,1 @@
+{"t":"map","a":{"file":"dungeon_exit.tmx"},"c":[{"t":"objects","c":[{"t":"object","a":{"id":"tri_door_dungeon_exit_to_woods"},"c":[{"t":"trigger","a":{"path":"data/objects/maps/triggers/tri_door_generic_trigger.lua"}}]}]}]}

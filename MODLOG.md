@@ -61,3 +61,4 @@ Reimplementar ambos juegos en TS sobre una base común: mundo de Cazaproblemas (
 * Sudoku (problema 0, el primero del juego): sus casillas se registraban DESPUÉS de procesar el clic -> tocar no hacía nada. Ahora se dibuja antes de `controls()`. Paneles (pistas/salir) ya no dejan pasar clics al problema.
 * Prueba automática: los 116 problemas aceptan su respuesta y tienen zonas tocables en pantalla.
 * Celular: `touchHint()` cambia Espacio/Esc/Clic por A/☰/Tocá; botón Saltar en la historieta; Volver en el selector; tocar fuera de una ventana la cierra; sin ayuda de teclado en el HUD táctil; el compañero no espera encima del jugador.
+* Publicación: por pedido del autor (igual que Xa y SVNZ) el repo incluye los recursos convertidos (`public/assets/caza`, `public/assets/pira`) para jugar sin los juegos originales. `research/` sigue fuera.

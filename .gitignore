@@ -4,6 +4,3 @@ dist/
 research/
 *.log
 
-# game files: generated locally from your own copies (tools/build_*.py), never published
-public/assets/caza/
-public/assets/pira/

@@ -61,18 +61,26 @@ Hay dos finales: el verdadero si cerraste los cinco Ecos y uno parcial si faltan
 
 ## Cómo compilarlo
 
-El repositorio **no incluye archivos de los juegos originales**. Las imágenes, sonidos, mapas, scripts y fuentes se generan desde tus propias copias de los juegos con las herramientas de `tools/`:
+El repositorio incluye todo lo necesario para jugar: el código y los recursos ya convertidos en `public/assets/` (imágenes, sonidos, música, mapas, scripts, problemas y fuentes). No hace falta tener los juegos originales.
 
 ```bash
 npm install
+npm run dev        # servidor de desarrollo
+npm run build      # versión para publicar (carpeta dist/)
+```
+
+Requiere Node 22 o superior. Para publicar, alcanza con subir la carpeta `dist/` a cualquier hosting estático.
+
+Las herramientas de `tools/` (Python 3 con Pillow) muestran cómo se convirtieron los recursos desde los juegos originales y permiten regenerarlos:
+
+```bash
 python tools/decrypt_puzzles.py "<Cazaproblemas>/data/puzzles/puzzles.enc" "<Cazaproblemas>/Cazaproblemas.exe"
 python tools/build_caza.py "<Cazaproblemas>/data"
 python tools/build_pira.py "<Piracalculos>/Piracalculos.activity/assets"
 python tools/build_pixfont.py
-npm run dev        # o: npm run build
 ```
 
-Requiere Python 3 con Pillow y Node 22 o superior. El motor de Cazaproblemas está reimplementado y ejecuta los scripts Lua originales con una máquina virtual de Lua 5.1 propia (`src/game/caza/lua51.ts`). Los niveles de Piracálculos se reescribieron sobre sus gráficos y sonidos.
+El motor de Cazaproblemas está reimplementado y ejecuta los scripts Lua originales con una máquina virtual de Lua 5.1 propia (`src/game/caza/lua51.ts`). Los niveles de Piracálculos se reescribieron sobre sus gráficos y sonidos.
 
 ## Créditos
 

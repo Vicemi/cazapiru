@@ -1,0 +1,1 @@
+{"w":1,"h":1,"tw":19,"th":19,"tilesets":[{"first":1,"name":"collisions","image":"collisions.png","cols":5}],"tileprops":{},"layers":[{"name":"ground 1","layer":1,"data":[0]}],"groups":{"waypoints":[]}}
