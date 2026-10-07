@@ -1,0 +1,54 @@
+---
+import CazaPiraGame from '../components/CazaPiraGame.tsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="CazaPira: Piracálculos y Los Cazaproblemas en un solo juego de aventuras, matemática y puzzles." />
+    <title>CazaPira</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <CazaPiraGame client:only="react" />
+  </body>
+</html>
+
+<style is:global>
+  /* Futura family shipped with Cazaproblemas (UI font of both halves) */
+  @font-face { font-family: 'CPFutura'; src: url('/assets/caza/fonts/font19.otf'); font-weight: 400; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'CPFutura'; src: url('/assets/caza/fonts/font3.otf'); font-weight: 500; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'CPFutura'; src: url('/assets/caza/fonts/font15.otf'); font-weight: 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'CPFutura'; src: url('/assets/caza/fonts/font13.otf'); font-weight: 800; font-style: normal; font-display: swap; }
+
+  @font-face { font-family: 'CPMono'; src: url('/assets/caza/fonts/monoxil.ttf'); font-display: swap; }
+
+  html, body { margin: 0; height: 100%; background: #05060f; overflow: hidden; overscroll-behavior: none; }
+  .cp-stage { position: fixed; inset: 0; height: 100vh; height: 100dvh; background: #05060f; }
+  .cp-stage:fullscreen { width: 100vw; height: 100vh; }
+  .cp-canvas { display: block; width: 100%; height: 100%; object-fit: contain; outline: none; touch-action: none; image-rendering: auto; }
+  .cp-rotate { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(5,6,15,0.94); color: #f4e8cc; z-index: 10; text-align: center; }
+  .cp-rotate-inner { font: 700 1.4rem/1.5 system-ui, sans-serif; display: flex; flex-direction: column; gap: 1rem; }
+  .cp-rotate-icon { font-size: 3rem; animation: cp-spin 2s ease-in-out infinite; }
+  @keyframes cp-spin { 0%, 20% { transform: rotate(0deg); } 70%, 100% { transform: rotate(90deg); } }
+  .cp-top-btn { position: fixed; z-index: 8; top: calc(0.5rem + env(safe-area-inset-top)); left: calc(0.6rem + env(safe-area-inset-left)); width: clamp(2.4rem, 8vh, 3rem); height: clamp(2.4rem, 8vh, 3rem);
+    border-radius: 50%; border: 2px solid rgba(255,255,255,0.6); background: rgba(0,0,0,0.35); color: #fff; font: bold 1.1rem system-ui; padding: 0; display: flex; align-items: center; justify-content: center;
+    touch-action: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+
+  /* touch controls: sized from the screen height so any phone keeps a playable layout */
+  .cp-touch { --b: clamp(3.4rem, 19vh, 5.4rem); position: fixed; inset: 0; z-index: 5; pointer-events: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; touch-action: none; }
+  .cp-stick-zone { position: absolute; left: 0; bottom: 0; width: 38vw; height: 62vh; pointer-events: auto; touch-action: none; }
+  .cp-stick-hint { position: absolute; left: calc(1.2rem + env(safe-area-inset-left)); bottom: calc(1.2rem + env(safe-area-inset-bottom)); width: calc(var(--b) * 1.9); height: calc(var(--b) * 1.9);
+    border-radius: 50%; border: 2px dashed rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.45); font: bold 2rem system-ui; pointer-events: none; }
+  .cp-stick-ring, .cp-stick-knob { position: absolute; border-radius: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+  .cp-stick-ring { width: calc(var(--b) * 2.1); height: calc(var(--b) * 2.1); border: 2px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.08); }
+  .cp-stick-knob { width: var(--b); height: var(--b); background: rgba(255,255,255,0.4); border: 2px solid rgba(255,255,255,0.75); }
+  .cp-act { position: absolute; pointer-events: auto; touch-action: none; border-radius: 50%; width: var(--b); height: var(--b); display: flex; align-items: center; justify-content: center; padding: 0;
+    border: 2px solid rgba(255,255,255,0.65); background: rgba(255,255,255,0.14); color: #fff; font: 800 clamp(1.1rem, 4.6vh, 1.6rem) system-ui, sans-serif; text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    -webkit-tap-highlight-color: transparent; transition: transform 60ms, background 60ms; }
+  .cp-act.is-down { background: rgba(255,255,255,0.45); transform: scale(0.93); }
+  .cp-a { right: calc(1.4rem + env(safe-area-inset-right)); bottom: calc(1.4rem + env(safe-area-inset-bottom)); width: calc(var(--b) * 1.2); height: calc(var(--b) * 1.2); border-color: rgba(255,210,120,0.9); }
+  .cp-c { right: calc(1.4rem + var(--b) * 1.2 + 0.8rem + env(safe-area-inset-right)); bottom: calc(1.4rem + env(safe-area-inset-bottom)); border-color: rgba(140,220,255,0.9); }
+  .cp-esc { right: calc(1.4rem + env(safe-area-inset-right)); bottom: calc(1.4rem + var(--b) * 1.2 + 0.8rem + env(safe-area-inset-bottom)); width: calc(var(--b) * 0.8); height: calc(var(--b) * 0.8); }
+</style>
